@@ -13,30 +13,28 @@ export const ThemeSelect = () => {
   };
 
   return (
-    <div className={`h-[auto] w-[475px] bg-white flex flex-col px-9 py-7 shadow-2xl`}>
-      <span className="text-resume-800 font-bold text-lg mb-2">Choose a resume colour scheme</span>
-      <div className="w-full">
+    <div className={`h-[auto] w-[475px] bg-white flex flex-col px-9 py-7`}>
+      {/* <span className="text-resume-800 font-bold text-lg mb-2">Choose a resume colour scheme</span> */}
+      <div className="w-full flex flex-row justify-evenly">
         {SYSTEM_COLORS.map((themeObject) => {
           const isActive = themeObject.id === activeTheme.id;
           return (
-            <div></div>
-            // <div
-            //   key={themeObject.id}
-            //   className={`flex border rounded mb-[16px] justify-between items-center py-[14px] px-4 ${
-            //     isActive ? 'bg-resume-50 border-resume-500' : 'border-[#a9a9a9]'
-            //   } hover:cursor-pointer`}
-            //   onClick={() => handleActiveTheme(themeObject)}
-            // >
-            //   <ColorBoxWrapper>
-            //     <ColorBox bgColor={themeObject.backgroundColor} />
-            //     <ColorBox bgColor={themeObject.fontColor} />
-            //     <ColorBox bgColor={themeObject.titleColor} />
-            //     <ColorBox bgColor={themeObject.highlighterColor} />
-            //   </ColorBoxWrapper>
-            //   {isActive && (
-            //     <Image src={'/icons/selected-tick.svg'} alt="logo" width="28" height="20" />
-            //   )}
-            // </div>
+            // <div></div>
+            <div
+              key={themeObject.id}
+              className={`w-6 h-6 flex  justify-evenly items-center py-[14px] px-4 hover:cursor-pointer`}
+              onClick={() => handleActiveTheme(themeObject)}
+            >
+              <ColorBoxWrapper>
+                {/* <ColorBox bgColor={themeObject.backgroundColor} /> */}
+                {/* <ColorBox bgColor={themeObject.fontColor} /> */}
+                <ColorBox bgColor={themeObject.titleColor} />
+                {/* <ColorBox bgColor={themeObject.highlighterColor} /> */}
+              </ColorBoxWrapper>
+              {isActive && (
+                <Image src={'/icons/selected-tick.svg'} alt="logo" width="28" height="20" />
+              )}
+            </div>
           );
         })}
       </div>

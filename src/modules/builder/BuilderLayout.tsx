@@ -10,6 +10,9 @@ const BuilderLayout = () => {
     <div className="flex flex-col h-screen">
       <NavBarLayout />
       <main className="flex flex-1 max-h-[calc(100vh_-_3.5rem)] print:max-h-fit">
+      <aside className="w-[25vw] min-w-[20rem] print:hidden">
+          <EditorLayout />
+        </aside>
         <div className="flex flex-col flex-1 justify-center bg-custom-grey100 print:bg-white">
           <header className="w-[210mm] mt-5 mb-3 mx-auto print:hidden">
             <ResumeHeader />
@@ -18,12 +21,9 @@ const BuilderLayout = () => {
             <ResumeLayout />
           </div>
         </div>
-        <aside className="w-[25vw] min-w-[20rem] print:hidden">
-          <EditorLayout />
-        </aside>
       </main>
 
-      <footer className="print:hidden">
+      {/* <footer className="print:hidden">
         <Tooltip title="Share feedback">
           <a
             href="https://forms.gle/YmpXEZLk6LYdnqet7"
@@ -34,7 +34,7 @@ const BuilderLayout = () => {
             <Image src="/icons/rate-review.svg" alt="Feedback button" width="24" height="24" />
           </a>
         </Tooltip>
-      </footer>
+      </footer> */}
     </div>
   );
 };

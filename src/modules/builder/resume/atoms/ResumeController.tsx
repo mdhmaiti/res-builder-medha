@@ -14,7 +14,7 @@ const ResumeController = ({
   return (
     <div className="flex">
       <div className="flex items-center gap-5">
-        <TooltipRenderer title="Zoom out">
+        {/* <TooltipRenderer title="Zoom out">
           <Image
             src="/icons/zoom-out.svg"
             className="cursor-pointer"
@@ -43,7 +43,7 @@ const ResumeController = ({
             height="24"
             onClick={resetZoom}
           />
-        </TooltipRenderer>
+        </TooltipRenderer> */}
       </div>
     </div>
   );
