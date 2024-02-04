@@ -18,14 +18,14 @@ const Contacts = ({
           onChangeHandler(event.target.value, 'name');
         }}
       />
-      <TextField
+      {/* <TextField
         label="Image URL"
         variant="filled"
         value={basicTabs.image}
         onChange={(event: ChangeEvent<HTMLInputElement>) => {
           onChangeHandler(event.target.value, 'image');
         }}
-      />
+      /> */}
       <TextField
         label="Title"
         variant="filled"

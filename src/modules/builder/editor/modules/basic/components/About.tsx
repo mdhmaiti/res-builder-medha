@@ -18,14 +18,14 @@ const About = ({
         }}
         name="summary"
       />
-      <RichtextEditor
+      {/* <RichtextEditor
         label="Career objective"
         value={basicTabs.objective}
         onChange={(htmlOutput) => {
           onChangeHandler(htmlOutput, 'objective');
         }}
         name="objective"
-      />
+      /> */}
     </Fragment>
   );
 };

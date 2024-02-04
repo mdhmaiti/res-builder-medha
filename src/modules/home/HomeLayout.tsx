@@ -29,11 +29,11 @@ const HomeLayout = () => {
           <Image src={'/icons/resume-icon.png'} alt="logo" height="36" width="36" />
         </Link>
         <div className="flex-auto flex justify-between items-center ml-5">
-          <NavBarActions>
+          {/* <NavBarActions>
             <Link href="/builder" passHref={true}>
               <StyledButton variant="text">Editor</StyledButton>
             </Link>
-          </NavBarActions>
+          </NavBarActions> */}
         </div>
       </nav>
       <div
