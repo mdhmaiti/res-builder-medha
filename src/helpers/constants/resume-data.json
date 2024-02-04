@@ -1,12 +1,12 @@
 {
   "basics": {
-    "name": "Jane Doe",
+    "name": "Romario Shephard",
     "label": "Frontend Developer",
-    "image": "https://randomuser.me/api/portraits/men/18.jpg",
-    "email": "janedoe@email.com",
-    "phone": "+91 9876543210",
-    "url": "www.e-resume.vercel.app",
-    "summary": "I am a web developer having expertise in frontend development and exposure to back- end development. I design and develop web applications using the latest technologies to deliver the product with quality code.",
+    "image": "",
+    "email": "enter@email.com",
+    "phone": "+91 9999999999",
+    "url": "www.website.com",
+    "summary": "I am a professional who designs, builds, and maintains websites or web applications. I take the sole responsibility for transforming the client's vision into a functional and engaging digital product.",
     "location": {
       "address": "",
       "postalCode": "",
@@ -20,38 +20,38 @@
     "profiles": [
       {
         "network": "linkedin",
-        "username": "sadanandpai",
-        "url": "https://www.linkedin.com/in/sadanandpai/"
+        "username": "username",
+        "url": "https://www.linkedin.com/in/username/"
       },
       {
         "network": "twitter",
-        "username": "sadanandpai",
-        "url": "https://www.twitter.com/sadanandpai/"
+        "username": "username",
+        "url": "https://www.twitter.com/username/"
       },
       {
         "network": "github",
-        "username": "sadanandpai",
-        "url": "https://github.com/sadanandpai/"
+        "username": "username",
+        "url": "https://github.com/username/"
       },
       {
         "network": "hackerrank",
-        "username": "paicube",
-        "url": "https://www.hackerrank.com/paicube/"
+        "username": "username",
+        "url": "https://www.hackerrank.com/username/"
       },
       {
         "network": "hackerearth",
-        "username": "sadanandpai",
-        "url": "https://www.hackerearth.com/sadanandpai/"
+        "username": "username",
+        "url": "https://www.hackerearth.com/username/"
       },
       {
         "network": "codechef",
-        "username": "sadanandpai",
-        "url": "https://www.codechef.com/sadanandpai/"
+        "username": "username",
+        "url": "https://www.codechef.com/username/"
       },
       {
         "network": "leetcode",
-        "username": "paicube",
-        "url": "https://leetcode.com/paicube/"
+        "username": "username",
+        "url": "https://leetcode.com/username/"
       }
     ]
   },
@@ -67,10 +67,8 @@
       { "name": "Angular", "level": 70 }
     ],
     "technologies": [
-      { "name": "Algorithms", "level": 3 },
       { "name": "Progressive Web Apps", "level": 3 },
-      { "name": "SQL", "level": 3 },
-      { "name": "Data Structures", "level": 3 }
+      { "name": "SQL", "level": 3 }
     ],
     "libraries": [
       { "name": "jQuery", "level": 3 },
@@ -78,19 +76,15 @@
     ],
     "databases": [{ "name": "Firebase", "level": 3 }],
     "practices": [
-      { "name": "Component based architecture", "level": 3 },
       { "name": "Agile methodology", "level": 3 },
       { "name": "Design Patterns", "level": 3 },
-      { "name": "Test Driven Development", "level": 3 },
-      { "name": "MVC", "level": 3 }
+      { "name": "Test Driven Development", "level": 3 }
     ],
     "tools": [
       { "name": "Git", "level": 3 },
       { "name": "VS Code", "level": 3 },
       { "name": "Jira", "level": 3 },
-      { "name": "Webpack", "level": 3 },
-      { "name": "Eclipse", "level": 3 },
-      { "name": "Bitbucket", "level": 3 }
+      { "name": "Webpack", "level": 3 }
     ]
   },
 
@@ -98,78 +92,78 @@
     {
       "id": "1",
       "name": "Company 1",
-      "position": "Senior Software Developer",
+      "position": "SDE-2",
       "url": "",
-      "startDate": "Apr 2021",
+      "startDate": "Apr 2020",
       "isWorkingHere": true,
       "endDate": null,
       "highlights": [
-        "* Worked on a team of 5 developers to develop a web application for a client"
+        "* Worked with a company named <company name> for <x> years with a team size of <x> developers"
       ],
-      "summary": "<ul><li> Use my extensive experience with front end development to define the structure and components for the project, making sure they are reusable</li><li>Keep the code quality high reviewing code from other developers and suggesting improvements</li><li> Interact with the designer to suggest changes and to make sure the view he has about the design is translated into actual functionality</li><li> E-commerce maintenance <strong>with Fastcommerce</strong>, a Brazilian e-commerce platform</li></ul>",
-      "years": ""
+      "summary": "<ul><li> I am a professional who designs, builds, and maintains websites or web applications. I take the sole responsibility for transforming the client's vision into a functional and engaging digital product.</li><li>mention more about the contribution</li><li> Mention about the impact you created</li></ul>",
+      "years": "<x> years"
     },
     {
       "id": "2",
       "name": "Company 2",
-      "position": "Software Developer",
+      "position": "SDE-1",
       "url": "",
-      "startDate": "Jun 2015",
+      "startDate": "Jan 2018",
       "isWorkingHere": false,
-      "endDate": "Dec 2017",
+      "endDate": "Dec 2020",
       "highlights": [
-        "* Worked on a team of 5 developers to develop a web application for a client"
+        "* Worked with a company named <company name> for <x> years with a team size of <x> developers"
       ],
-      "summary": "<ul><li>Develop web applications based on Sharepoint, Drupal 8 and Episerver</li><li>Lead a team of 10 front end developers, giving support to the client's multi-cultural team, providing feedback, clarifying requirements and helping with technical questions</li><li>Keep the Project Manager and the IT Leads updated on the overall progress of the projects and manage the tasks distributed to the team</li><li>Keep the code and the features implemented by the other developers in accordance to the requirements</li></ul>",
-      "years": "2 years"
+      "summary": "<ul><li> I am a professional who designs, builds, and maintains websites or web applications. I take the sole responsibility for transforming the client's vision into a functional and engaging digital product.</li><li>mention more about the contribution</li><li> Mention about the impact you created</li></ul>",
+      "years": "<x> years"
     },
     {
       "id": "3",
       "name": "Company 3",
-      "position": "Trainee Developer",
+      "position": "SDE Intern",
       "url": "",
-      "startDate": "Aug 2011",
+      "startDate": "July 2018",
       "isWorkingHere": false,
-      "endDate": "May 2015",
+      "endDate": "Dec 2018",
       "highlights": [
-        "* Worked on a team of 5 developers to develop a web application for a client"
+        "* Worked with a company named <company name> for <x> years with a team size of <x> developers"
       ],
-      "summary": "<ul><li>Design easy user interfaces and great user experiences for the digital platforms of small companies</li><li>Wordpress development, including themes creation or customization, custom plugins development and training</li><li>E-commerce maintenance with Fastcommerce, a Brazilian e-commerce platform</li><li>E-commerce development with Magento, customizing preexisting themes</li><li>Integrate external services such as payment services, delivery, etc into Magento solutions</li></ul>",
-      "years": "4 year"
+      "summary": "<ul><li> I am a professional who designs, builds, and maintains websites or web applications. I take the sole responsibility for transforming the client's vision into a functional and engaging digital product.</li><li>mention more about the contribution</li><li> Mention about the impact you created</li></ul>",
+      "years": "<x> years"
     }
   ],
 
   "education": [
     {
       "id": "1",
-      "institution": "MIT, University",
-      "url": "https://www.mit.edu/",
-      "studyType": "MS",
-      "area": "Cloud technology",
+      "institution": "IIT Kharaghpur, B.Tech",
+      "url": "https://www.btech.edu/",
+      "studyType": "B.Tech",
+      "area": "Computer Science",
       "startDate": "2014",
       "isStudyingHere": false,
-      "endDate": "2016",
-      "score": "68%",
+      "endDate": "2018",
+      "score": "9.1 CGPA",
       "courses": []
     },
     {
       "id": "2",
-      "institution": "NMAMIT, Nitte",
-      "url": "https://www.mit.edu/",
-      "studyType": "B.Tech (VTU)",
-      "area": "Computer Science",
-      "startDate": "2010",
+      "institution": "KPRS School",
+      "url": "https://www.btech.edu/",
+      "studyType": "Class - 12",
+      "area": "Science",
+      "startDate": "2012",
       "isStudyingHere": false,
       "endDate": "2014",
-      "score": "8.3 CGPA",
+      "score": "95%",
       "courses": []
     }
   ],
 
   "activities": {
-    "involvements": "<ul><li>Prevented millions of dollars in state sales tax undercharges by initiating tests that revealed a bug in a new release of shopping cart software.</li><li>Isolated previously undiscovered flaw in price checking tool resulting in more competitive pricing and a 20 percent increase in revenue.</li><li>Implemented automated testing tools spawning more diligent levels of regression testing, negative testing, error/bug retests and usability.</li><li>Prevented millions of dollars in state sales tax undercharges by initiating tests that revealed a bug in a new release of shopping cart software.</li></ul>",
+    "involvements": "<ul><li> I am a professional who designs, builds, and maintains websites or web applications. I take the sole responsibility for transforming the client's vision into a functional and engaging digital product.</li><li>mention more about the contribution</li><li> Mention about the impact you created</li></ul>",
 
-    "achievements": "<ul><li>React and redux - A complete guide 2020 from Udemy</li><li>Agile and Scrum Master Certificate from Udacity</li><li>Best performer award for consistently exceeding the performance</li><li>Certificate of exceptional bug finder by XYZ client</li><li>Recognition zero defect delivery</li><li>Best performer award for consistently exceeding the performance</li></ul>"
+    "achievements": "<ul><li> I am a professional who designs, builds, and maintains websites or web applications. I take the sole responsibility for transforming the client's vision into a functional and engaging digital product.</li><li>mention more about the contribution</li><li> Mention about the impact you created</li></ul>"
   },
 
   "volunteer": [
@@ -177,26 +171,26 @@
       "id": "1",
       "organization": "Company XYZ",
       "position": "Organizer",
-      "url": "https://xyx.com/",
+      "url": "https://xyz.com/",
       "startDate": "2012-01-01",
       "endDate": "2013-01-01",
-      "summary": "Organized several hackthons & monthly meetup to improve the community",
-      "highlights": ["Awarded 'Volunteer of the Month'"],
+      "summary": "I have contributed to <club> and played a crucial part",
+      "highlights": ["I have been awarded with <award> for my contribution"],
       "isVolunteeringNow": false
     }
   ],
   "awards": [
     {
-      "title": "Certificate of exceptional bug finder",
-      "date": "2014-11-01",
-      "awarder": "XYZ client",
-      "summary": "* Recognition zero defect delivery",
+      "title": "Certificate of <work>",
+      "date": "2012-01-01",
+      "awarder": "<name>",
+      "summary": "Awarded for exceptional improvements made to improve user experience",
       "id": "1"
     },
     {
-      "title": "Certificate of best frontend developer",
-      "date": "2016-11-01",
-      "awarder": "XYZ client",
+      "title": "Certificate of <work>",
+      "date": "2013-01-01",
+      "awarder": "<name>",
       "summary": "Awarded for exceptional improvements made to improve user experience",
       "id": "1"
     }
