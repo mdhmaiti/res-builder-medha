@@ -133,6 +133,27 @@
     }
   ],
 
+  "projects": [
+    {
+      "id": "1",
+      "name": "Project-1",
+      "url": "",
+      "summary": "<ul><li> I am a professional who designs, builds, and maintains websites or web applications. I take the sole responsibility for transforming the client's vision into a functional and engaging digital product.</li><li>mention more about the contribution</li><li> Mention about the impact you created</li></ul>"
+    },
+    {
+      "id": "2",
+      "name": "Project-2",
+      "url": "",
+      "summary": "<ul><li> I am a professional who designs, builds, and maintains websites or web applications. I take the sole responsibility for transforming the client's vision into a functional and engaging digital product.</li><li>mention more about the contribution</li><li> Mention about the impact you created</li></ul>"
+    },
+    {
+      "id": "3",
+      "name": "Project-3",
+      "url": "",
+      "summary": "<ul><li> I am a professional who designs, builds, and maintains websites or web applications. I take the sole responsibility for transforming the client's vision into a functional and engaging digital product.</li><li>mention more about the contribution</li><li> Mention about the impact you created</li></ul>"
+    }
+  ],
+
   "education": [
     {
       "id": "1",
