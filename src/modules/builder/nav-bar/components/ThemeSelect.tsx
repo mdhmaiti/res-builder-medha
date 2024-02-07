@@ -13,16 +13,16 @@ export const ThemeSelect = () => {
   };
 
   return (
-    <div className={`h-[auto] w-[475px]  flex flex-col px-9 py-7 `}>
+    <div className={`h-[auto] w-[475px]  flex flex-col px-9 py-7 border:none`}>
       {/* <span className="text-resume-800 font-bold text-lg mb-2">Choose a resume colour scheme</span> */}
-      <div className="w-full flex flex-row justify-evenly">
+      <div className="w-full flex flex-row justify-evenly border:none">
         {SYSTEM_COLORS.map((themeObject) => {
           const isActive = themeObject.id === activeTheme.id;
           return (
             // <div></div>
             <div
               key={themeObject.id}
-              className={`w-6 h-6 flex  justify-evenly items-center py-[14px] px-4 hover:cursor-pointer`}
+              className={`w-6 h-6 flex  justify-evenly items-center py-[14px] px-4 hover:cursor-pointer border:none`}
               onClick={() => handleActiveTheme(themeObject)}
             >
               <ColorBoxWrapper>

@@ -24,9 +24,9 @@ const HomeLayout = () => {
 
   return (
     <motion.div initial={{ opacity: 0 }} animate={{ opacity: [0, 1] }} className="scroll-smooth">
-      <nav className="sticky top-0 z-20 h-14 w-full bg-resume-800 flex py-2.5 px-4 xl:px-60 items-center shadow-level-8dp">
+      <nav className="sticky top-0 z-20 h-14 w-full bg-cyan-700 flex py-2.5 px-4 xl:px-60 items-center shadow-level-8dp">
         <Link href="/">
-          <Image src={'/icons/resume-icon.png'} alt="logo" height="36" width="36" />
+          <Image src={'/icons/resume-icon.png'} alt="logo" height="180" width="196" />
         </Link>
         <div className="flex-auto flex justify-between items-center ml-5">
           {/* <NavBarActions>
@@ -52,7 +52,7 @@ const HomeLayout = () => {
             <div className="col-span-12 sm:col-span-4">
               <motion.img
                 id="resume-3d"
-                src="/resume.webp"
+                src="/icons/resume-icon.png"
                 alt="resume-3d"
                 className="w-6/12 sm:w-9/12"
                 onMouseEnter={() => {
@@ -65,7 +65,7 @@ const HomeLayout = () => {
               />
             </div>
             <div className="col-span-12 sm:col-span-8">
-              <h3 className="text-xl md:text-2xl mb-2 text-resume-400">SIMPLEST WAY TO BUILD A</h3>
+              <h3 className="text-xl md:text-2xl mb-2 text-resume-400">Build your brand-new</h3>
               <h1 className="text-5xl mb-12 text-resume-800">Professional Resume</h1>
 
               <div className="flex mb-10">
@@ -77,7 +77,7 @@ const HomeLayout = () => {
                 </p> */}
               </div>
               <Link href="/builder" passHref={true}>
-                <Button variant="contained" className="bg-resume-800 mb-2">
+                <Button variant="contained" className="bg-cyan-500 mb-2">
                   BUILD YOUR RESUME
                 </Button>
               </Link>
@@ -104,7 +104,7 @@ const HomeLayout = () => {
         </div>
       </motion.div>
 
-      <div className="bg-resume-50 my-32"></div>
+      <div className="bg-cyan-500 my-32"></div>
     </motion.div>
   );
 };
