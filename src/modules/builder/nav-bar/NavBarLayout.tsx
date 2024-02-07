@@ -125,10 +125,7 @@ const NavBarLayout = () => {
       </Link>
       <div className="flex-auto flex justify-between items-center ml-5">
         <NavBarMenu>
-          <NavMenuItem
-            caption={`choose a template`}
-            popoverChildren={<TemplateSelect />}
-          />
+          <NavMenuItem caption={`choose a template`} popoverChildren={<TemplateSelect />} />
           <NavMenuItem caption="choose a colour" popoverChildren={<ThemeSelect />} />
         </NavBarMenu>
         <NavBarActions>

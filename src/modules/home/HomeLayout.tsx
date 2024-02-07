@@ -104,8 +104,7 @@ const HomeLayout = () => {
         </div>
       </motion.div>
 
-      <div className="bg-resume-50 my-32">
-      </div>
+      <div className="bg-resume-50 my-32"></div>
     </motion.div>
   );
 };

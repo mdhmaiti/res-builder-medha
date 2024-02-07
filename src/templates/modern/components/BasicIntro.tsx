@@ -1,4 +1,4 @@
-import { BsGlobe, BsTwitter, BsGithub} from 'react-icons/bs';
+import { BsGlobe, BsTwitter, BsGithub } from 'react-icons/bs';
 import { FaHackerrank } from 'react-icons/fa';
 import { SiCodechef } from 'react-icons/si';
 import { SiHackerearth } from 'react-icons/si';
@@ -57,72 +57,51 @@ export const BasicIntro = ({
           )}
           {linkedin && (
             <div className="flex gap-1 ml-1 items-center">
-              <a
-              href={linkedin}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="ml-1"
-            ><BsLinkedin /></a>
+              <a href={linkedin} target="_blank" rel="noopener noreferrer" className="ml-1">
+                <BsLinkedin />
+              </a>
             </div>
           )}
           {twitter && (
             <div className="flex gap-1 ml-1 items-center">
-              <a
-              href={twitter}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="ml-1"
-            ><BsTwitter /></a>
+              <a href={twitter} target="_blank" rel="noopener noreferrer" className="ml-1">
+                <BsTwitter />
+              </a>
             </div>
           )}
           {github && (
             <div className="flex gap-1 ml-1 items-center">
-              <a
-              href={github}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="ml-1"
-            ><BsGithub /></a>
+              <a href={github} target="_blank" rel="noopener noreferrer" className="ml-1">
+                <BsGithub />
+              </a>
             </div>
           )}
           {hackerrank && (
             <div className="flex gap-1 ml-1 items-center">
-              <a
-              href={hackerrank}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="ml-1"
-            ><FaHackerrank /></a>
+              <a href={hackerrank} target="_blank" rel="noopener noreferrer" className="ml-1">
+                <FaHackerrank />
+              </a>
             </div>
           )}
           {hackerearth && (
             <div className="flex gap-1 ml-1 items-center">
-              <a
-              href={hackerearth}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="ml-1"
-            ><SiHackerearth /></a>
+              <a href={hackerearth} target="_blank" rel="noopener noreferrer" className="ml-1">
+                <SiHackerearth />
+              </a>
             </div>
           )}
           {codechef && (
             <div className="flex gap-1 ml-1 items-center">
-              <a
-              href={codechef}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="ml-1"
-            ><SiCodechef /></a>
+              <a href={codechef} target="_blank" rel="noopener noreferrer" className="ml-1">
+                <SiCodechef />
+              </a>
             </div>
           )}
           {leetcode && (
             <div className="flex gap-1 ml-1 items-center">
-              <a
-              href={leetcode}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="ml-1"
-            ><SiLeetcode /></a>
+              <a href={leetcode} target="_blank" rel="noopener noreferrer" className="ml-1">
+                <SiLeetcode />
+              </a>
             </div>
           )}
         </div>
