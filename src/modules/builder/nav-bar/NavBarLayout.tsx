@@ -119,12 +119,12 @@ const NavBarLayout = () => {
   }, []);
 
   return (
-    <nav className="h-full w-full  bg-cyan-950 relative flex py-2.5 pl-5 pr-4 items-center shadow-level-8dp z-20 print:hidden">
+    <nav className="h-full w-full  bg-cyan-700 relative flex py-2.5 pl-5 pr-4 items-center shadow-level-8dp z-20 print:hidden">
       <Link href="/">
         <Image src={'/icons/resume-icon.png'} alt="logo" height="106" width="106" />
       </Link>
       <div className="flex-auto flex justify-between items-center ml-5">
-        <NavBarMenu>
+        <NavBarMenu children={undefined}>
           {/* <NavMenuItem
             caption={`choose a template`}
             popoverChildren={<TemplateSelect />}

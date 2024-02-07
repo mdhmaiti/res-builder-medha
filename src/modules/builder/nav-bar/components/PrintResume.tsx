@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 
 import { StyledButton } from '../atoms';
+import { IoMdDownload } from 'react-icons/io';
 
 export const PrintResume = () => {
   useEffect(() => {
@@ -15,7 +16,8 @@ export const PrintResume = () => {
 
   return (
     <StyledButton onClick={globalThis?.print} variant="outlined">
-      Download as PDF
+      <IoMdDownload size="1.5rem" className='mr-2'/>
+      Download
     </StyledButton>
   );
 };
