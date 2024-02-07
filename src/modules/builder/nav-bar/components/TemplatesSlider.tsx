@@ -25,6 +25,7 @@ export const TemplateSlider = () => {
         width: '100%',
         autoHeight: true,
         perMove: 1,
+        arrows: false,
       });
 
       splideInstanceRef.current.mount();
@@ -42,37 +43,42 @@ export const TemplateSlider = () => {
   return (
     <div>
       <Global
-        styles={{
-          '.splide__arrow svg': {
-            fill: '#000000',
-          },
-          '.splide__arrow--prev': {
-            backgroundColor: 'transparent',
-          },
-          '.splide__arrow--next': {
-            backgroundColor: 'transparent',
-          },
-          '.splide__arrow--prev:disabled': {
-            cursor: 'not-allowed',
-          },
-          '.splide__arrow--next:disabled': {
-            cursor: 'not-allowed',
-          },
-        }}
+        styles={
+          {
+            // '.splide__arrow svg': {
+            //   fill: '#000000',
+            // },
+            // '.splide__arrow--prev': {
+            //   backgroundColor: 'transparent',
+            // },
+            // '.splide__arrow--next': {
+            //   backgroundColor: 'transparent',
+            // },
+            // '.splide__arrow--prev:disabled': {
+            //   cursor: 'not-allowed',
+            // },
+            // '.splide__arrow--next:disabled': {
+            //   cursor: 'not-allowed',
+            // },
+          }
+        }
       />
-      <section className="splide mt-[26px] mb-[32px] px-[40px]" ref={targetElementRef}>
-        <div className="splide__track">
-          <ul className="splide__list">
+      <section className="splide " ref={targetElementRef}>
+        <div className="splide__track ">
+          <ul className="splide__list flex flex-col items-center">
             {Object.keys(AVAILABLE_TEMPLATES).map((templateKey) => {
               const template = AVAILABLE_TEMPLATES[templateKey];
               const isActive = template.id === templateIndex;
               return (
-                <TemplateSlide
-                  key={template.id}
-                  isActive={isActive}
-                  {...template}
-                  onChangeTemplate={onChangeTemplate}
-                />
+                <>
+                  <TemplateSlide
+                    key={template.id}
+                    isActive={isActive}
+                    {...template}
+                    onChangeTemplate={onChangeTemplate}
+                  />
+                  <br />
+                </>
               );
             })}
           </ul>
@@ -96,9 +102,9 @@ export const TemplateSlide = ({
   onChangeTemplate: (id: string) => void;
 }) => {
   return (
-    <li className="splide__slide flex justify-center">
+    <li className="splide__slide flex items-center">
       <div
-        className={`h-[255px] w-[180px] rounded border hover:cursor-pointer overflow-hidden relative ${
+        className={`h-[355px] w-[300px] rounded border hover:cursor-pointer overflow-hidden relative ${
           isActive ? 'border-resume-800' : 'border-resume-200'
         }`}
         onClick={() => {

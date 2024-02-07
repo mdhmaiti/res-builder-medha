@@ -18,7 +18,7 @@ const BasicHeader = ({
           key={index}
           label={title}
           sx={{
-            color: 'rgb(46 64 82)',
+            color: 'white',
             textTransform: 'none',
             fontSize: '1rem',
           }}

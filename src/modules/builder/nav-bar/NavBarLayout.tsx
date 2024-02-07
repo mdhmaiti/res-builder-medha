@@ -119,17 +119,20 @@ const NavBarLayout = () => {
   }, []);
 
   return (
-    <nav className="h-14 w-full bg-resume-800 relative flex py-2.5 pl-5 pr-4 items-center shadow-level-8dp z-20 print:hidden">
+    <nav className="h-full w-full  bg-cyan-950 relative flex py-2.5 pl-5 pr-4 items-center shadow-level-8dp z-20 print:hidden">
       <Link href="/">
-        <Image src={'/icons/resume-icon.png'} alt="logo" height="36" width="36" />
+        <Image src={'/icons/resume-icon.png'} alt="logo" height="106" width="106" />
       </Link>
       <div className="flex-auto flex justify-between items-center ml-5">
         <NavBarMenu>
-          <NavMenuItem caption={`choose a template`} popoverChildren={<TemplateSelect />} />
-          <NavMenuItem caption="choose a colour" popoverChildren={<ThemeSelect />} />
+          {/* <NavMenuItem
+            caption={`choose a template`}
+            popoverChildren={<TemplateSelect />}
+          />
+          <NavMenuItem caption="choose a colour" popoverChildren={<ThemeSelect />} /> */}
         </NavBarMenu>
         <NavBarActions>
-          <StyledButton variant="text" onClick={exportResumeData}>
+          {/* <StyledButton variant="text" onClick={exportResumeData}>
             Export
           </StyledButton>
           <StyledButton
@@ -149,7 +152,12 @@ const NavBarLayout = () => {
               accept="application/json"
               onChange={handleFileChange}
             />
-          </StyledButton>
+          </StyledButton> */}
+          {/* <NavMenuItem
+            caption={`choose a template`}
+            popoverChildren={<TemplateSelect />}
+          />
+          <NavMenuItem caption="choose a colour" popoverChildren={<ThemeSelect />} /> */}
           <PrintResume />
         </NavBarActions>
       </div>

@@ -3,6 +3,7 @@ import Link from '@mui/material/Link';
 import { OutlinedButton } from 'src/helpers/common/atoms/Buttons';
 
 import { TemplateSlider } from './TemplatesSlider';
+import { ThemeSelect } from './ThemeSelect';
 
 export const StyledLink = styled(Link)(({ theme }) => ({
   color: theme.palette.resume[800],
@@ -15,9 +16,12 @@ export const StyledLink = styled(Link)(({ theme }) => ({
 
 export const TemplateSelect = () => {
   return (
-    <div className={`h-[459px] w-[600px] bg-white flex flex-col px-10 py-[23px] shadow-2xl`}>
+    <div className={`w-full h-full flex flex-col  shadow-2xl`}>
+      <ThemeSelect />
+
       <TemplateSlider />
-      <Divider />
+
+      {/* <Divider /> */}
       <div></div>
     </div>
   );

@@ -1,4 +1,5 @@
 import EditorLayout from './editor/EditorLayout';
+import EditorLayoutRight from './editor/EditorLayoutRight';
 import Image from 'next/image';
 import NavBarLayout from './nav-bar/NavBarLayout';
 import ResumeHeader from './resume/components/ResumeHeader';
@@ -9,18 +10,22 @@ const BuilderLayout = () => {
   return (
     <div className="flex flex-col h-screen">
       <NavBarLayout />
-      <main className="flex flex-1 max-h-[calc(100vh_-_3.5rem)] print:max-h-fit">
+      <main className="flex flex-1 max-h-[calc(100vh_-_5.5rem)] print:max-h-fit">
         <aside className="w-[25vw] min-w-[20rem] print:hidden">
           <EditorLayout />
         </aside>
         <div className="flex flex-col flex-1 justify-center bg-custom-grey100 print:bg-white">
           <header className="w-[210mm] mt-5 mb-3 mx-auto print:hidden">
             <ResumeHeader />
+            {/* <div className="w-full h-15 bg-cyan-950 text-center"> pwoihfbrb</div> */}
           </header>
           <div className="overflow-auto no-scrollbar">
             <ResumeLayout />
           </div>
         </div>
+        <aside className="w-[25vw] min-w-[20rem] print:hidden">
+          <EditorLayoutRight />
+        </aside>
       </main>
 
       {/* <footer className="print:hidden">
