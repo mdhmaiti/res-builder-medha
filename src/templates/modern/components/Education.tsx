@@ -3,6 +3,7 @@ import { SectionHeading } from '../atoms/SectionHeading';
 import { SectionSubtitle } from '../atoms/SectionSubtitle';
 import { SectionTitle } from '../atoms/SectionTitle';
 import { dateParser } from 'src/helpers/utils';
+import { SectionScore } from '../atoms/SectionScore';
 
 export const EducationSection = ({ education }: { education: IEducation[] }) => {
   return (
@@ -24,6 +25,7 @@ export const EducationSection = ({ education }: { education: IEducation[] }) => 
                   {/* <p className="text-xs">60%</p> */}
                 </div>
               </div>
+              <SectionScore label={`${item.score}`}></SectionScore>
             </div>
           </div>
         );
