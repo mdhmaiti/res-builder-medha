@@ -58,7 +58,7 @@ const Volunteer: React.FC<IVolunteerProps> = ({ volunteeringInfo, currentIndex }
 
   return (
     <Fragment>
-      <TextField
+      {/* <TextField
         label="Organisation"
         variant="filled"
         value={volunteeringInfo.organization}
@@ -71,9 +71,9 @@ const Volunteer: React.FC<IVolunteerProps> = ({ volunteeringInfo, currentIndex }
         required
         autoFocus={true}
         sx={{ marginBottom: '26px' }}
-      />
+      /> */}
       <TextField
-        label="Role"
+        label="Project Name"
         variant="filled"
         value={volunteeringInfo.position}
         onChange={(e: ChangeEvent<HTMLInputElement>) => {
@@ -97,7 +97,7 @@ const Volunteer: React.FC<IVolunteerProps> = ({ volunteeringInfo, currentIndex }
         )}
       />
       <SwitchWidget
-        label={'I currently volunteer here'}
+        label={'I am currently working on the project'}
         value={volunteeringInfo.isVolunteeringNow ?? false}
         onChange={(newValue: boolean) => {
           onChangeHandler('isVolunteeringNow', newValue);

@@ -190,14 +190,25 @@
   "volunteer": [
     {
       "id": "1",
-      "organization": "Company XYZ",
-      "position": "Organizer",
+      "organization": "",
+      "position": "Project-1",
       "url": "https://xyz.com/",
       "startDate": "2012-01-01",
       "endDate": "2013-01-01",
-      "summary": "I have contributed to <club> and played a crucial part",
+      "summary": "<ul><li>I have contributed and played a crucial part.</li><li>list of the technologies used.</li><li>key features of the project.</li></ul>",
       "highlights": ["I have been awarded with <award> for my contribution"],
       "isVolunteeringNow": false
+    },
+    {
+      "id": "2",
+      "organization": "",
+      "position": "Project-2",
+      "url": "https://xyz.com/",
+      "startDate": "2012-01-01",
+      "endDate": "2013-01-01",
+      "summary": "<ul><li>I have contributed and played a crucial part.</li><li>list of the technologies used.</li><li>key features of the project.</li></ul>",
+      "highlights": ["I have been awarded with <award> for my contribution"],
+      "isVolunteeringNow": true
     }
   ],
   "awards": [

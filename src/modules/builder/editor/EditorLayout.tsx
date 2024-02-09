@@ -24,7 +24,7 @@ const EditorLayout = () => {
 
   return (
     <ErrorBoundary>
-      <div className=" h-full  p-6 overflow-auto relative no-scrollbar shadow-level-4dp bg-cyan-900">
+      <div className=" h-full  p-6 overflow-auto relative no-scrollbar shadow-level-4dp bg-cyan-700">
         {displayElement}
 
         <div className="mt-8 text-white p-3 m-2">

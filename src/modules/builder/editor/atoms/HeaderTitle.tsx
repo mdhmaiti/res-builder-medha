@@ -13,7 +13,7 @@ const HeaderTitle = ({ title }: { title: string }) => (
     {title == 'Skills and Expertise' && <FaUserGear size="1.5rem" />}
     {title == 'Education' && <PiCertificateFill size="1.5rem" />}
     {title == 'Experience' && <RiUserStarFill size="1.5rem" />}
-    {title == 'Volunteering' && <MdAssignmentAdd size="1.5rem" />}
+    {title == 'Projects' && <MdAssignmentAdd size="1.5rem" />}
     {title == 'Activities' && <FaFileSignature size="1.5rem" />}
     {title == 'Awards' && <FaTrophy size="1.5rem" />}
     <p className="text-xl ml-5">{title}</p>
