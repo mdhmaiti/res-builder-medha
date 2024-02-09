@@ -57,6 +57,11 @@
   },
 
   "skills": {
+    "skill":[
+      { "name": "Public speaking", "level": 3 },
+      { "name": "Photoshop", "level": 3 },
+      { "name": "Video Editing", "level": 3 }
+    ],
     "languages": [
       { "name": "JavaScript", "level": 90 },
       { "name": "HTML5", "level": 80 },
@@ -224,7 +229,7 @@
       "date": "2013-01-01",
       "awarder": "<name>",
       "summary": "Awarded for exceptional improvements made to improve user experience",
-      "id": "1"
+      "id": "2"
     }
   ]
 }

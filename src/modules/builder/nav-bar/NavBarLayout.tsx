@@ -1,6 +1,7 @@
 import { ChangeEvent, useCallback, useRef, useState } from 'react';
 import { NavBarActions, NavBarMenu, StyledButton } from './atoms';
 import {
+  useGeneralSkills,
   useDatabases,
   useFrameworks,
   useLanguages,
@@ -46,6 +47,7 @@ const NavBarLayout = () => {
       awards: useAwards.getState().awards,
       volunteer: useVoluteeringStore.getState().volunteeredExps,
       skills: {
+        skill: useGeneralSkills.getState().get(),
         languages: useLanguages.getState().get(),
         frameworks: useFrameworks.getState().get(),
         technologies: useTechnologies.getState().get(),
@@ -93,6 +95,7 @@ const NavBarLayout = () => {
           awards = [],
         } = uploadedResumeJSON;
         const {
+          skill = [],
           languages = [],
           frameworks = [],
           libraries = [],
@@ -102,6 +105,7 @@ const NavBarLayout = () => {
           tools = [],
         } = skills;
         useBasicDetails.getState().reset(basics);
+        useGeneralSkills.getState().reset(skill);
         useLanguages.getState().reset(languages);
         useFrameworks.getState().reset(frameworks);
         useLibraries.getState().reset(libraries);

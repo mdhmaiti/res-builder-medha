@@ -90,6 +90,12 @@ export default function ProfessionalTemplate() {
           </Section>
         </SectionValidator>
 
+        <SectionValidator value={skills.skill}>
+          <Section title="Skills">
+            <UnratedSkills items={skills.skill} />
+          </Section>
+        </SectionValidator>
+
         <SectionValidator value={skills.languages.concat(skills.frameworks)}>
           <Section title="Technical expertise">
             <RatedSkills items={skills.languages.concat(skills.frameworks)} />

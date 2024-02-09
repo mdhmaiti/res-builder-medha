@@ -6,6 +6,7 @@ import {
   usePractices,
   useTechnologies,
   useTools,
+  useGeneralSkills,
 } from 'src/stores/skills';
 
 import ResumeData from 'src/helpers/constants/resume-data.json';
@@ -25,6 +26,7 @@ export const useResumeStore = () => {
     awards: useAwards((state) => state.awards),
     volunteer: useVoluteeringStore((state) => state.volunteeredExps),
     skills: {
+      skill: useGeneralSkills((state) => state.get()),
       languages: useLanguages((state) => state.get()),
       frameworks: useFrameworks((state) => state.get()),
       technologies: useTechnologies((state) => state.get()),
@@ -42,6 +44,7 @@ export const useResumeStore = () => {
  */
 export const resetResumeStore = () => {
   useBasicDetails.getState().reset(ResumeData.basics);
+  useGeneralSkills.getState().reset(ResumeData.skills.skill);
   useLanguages.getState().reset(ResumeData.skills.languages);
   useFrameworks.getState().reset(ResumeData.skills.frameworks);
   useLibraries.getState().reset(ResumeData.skills.libraries);

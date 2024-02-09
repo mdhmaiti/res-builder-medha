@@ -51,6 +51,10 @@ export default function MordernTemplate() {
             <Objective objective={resumeData.basics.objective} />
           </SectionValidator>
 
+          <SectionValidator value={resumeData.skills.skill}>
+            <SkillsSection title="Skills" list={resumeData.skills.skill} />
+          </SectionValidator>
+
           <SectionValidator value={resumeData.skills.languages}>
             <SkillsSection title="Languages" list={resumeData.skills.languages} />
           </SectionValidator>

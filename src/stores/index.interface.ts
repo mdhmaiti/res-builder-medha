@@ -34,6 +34,7 @@ export interface IItem {
 }
 
 export interface ISkillsIntrf {
+  skill: IItem[];
   languages: IItem[];
   frameworks: IItem[];
   technologies: IItem[];

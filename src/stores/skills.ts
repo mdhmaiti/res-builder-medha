@@ -35,6 +35,20 @@ const getMethods = (set: SetState<ISkillState>, get: GetState<ISkillState>) => (
   setIsEnabled: setIsEnabled(set),
 });
 
+export const useGeneralSkills = create<ISkillState>(
+  persist(
+    (set, get) => ({
+      title: 'Skills',
+      hasLevel: false,
+      values: resumeData.skills.skill,
+      isEnabled: true,
+
+      ...getMethods(set, get),
+    }),
+    { name: 'skill' }
+  )
+);
+
 export const useLanguages = create<ISkillState>(
   persist(
     (set, get) => ({
