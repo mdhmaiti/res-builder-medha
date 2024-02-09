@@ -30,7 +30,8 @@ const EditorLayout = () => {
         <div className="mt-8 text-white p-3 m-2">
           <OutlinedButton onClick={resetResumeStore}>
             {' '}
-            <IoArrowUndo size="1.2rem" />{' '}
+            <IoArrowUndo size="1.2rem" />{''}
+            <span className='ml-3'>Reset</span>
           </OutlinedButton>
         </div>
       </div>

@@ -3,6 +3,7 @@ import { IProfiles } from 'src/stores/basic.interface';
 import React from 'react';
 import { socialIcons } from 'src/helpers/icons';
 import styled from '@emotion/styled';
+import { Tooltip } from '@mui/material';
 
 const SectionHolder = styled.div`
   border: 1px solid ${(props) => Color(props.theme.highlighterColor).alpha(0.75).toString()};
@@ -38,6 +39,7 @@ function SocialIcons({ profiles }: { profiles: IProfiles[] }) {
         return (
           Icon &&
           profile.url && (
+            <Tooltip title={profile.network}>
             <a
               href={profile.url}
               target="_blank"
@@ -47,6 +49,7 @@ function SocialIcons({ profiles }: { profiles: IProfiles[] }) {
             >
               <Icon className="h-5 w-5 bg-white" />
             </a>
+            </Tooltip>
           )
         );
       })}

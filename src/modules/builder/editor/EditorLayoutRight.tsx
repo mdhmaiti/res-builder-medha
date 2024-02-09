@@ -19,7 +19,7 @@ const EditorLayoutRight = () => {
   );
   return (
     <ErrorBoundary>
-      <div className=" h-full w-full overflow-auto relative no-scrollbar shadow-level-4dp bg-cyan-800 ">
+      <div className=" h-full w-full  relative no-scrollbar shadow-level-4dp bg-cyan-800 ">
         {/* {displayElement} */}
         {/* <div className="mt-8 text-white p-3 m-2"> <OutlinedButton onClick={resetResumeStore}>Reset all edits</OutlinedButton> </div> */}{' '}
         <TemplateSelect />

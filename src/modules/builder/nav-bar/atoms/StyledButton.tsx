@@ -4,7 +4,8 @@ export const StyledButton = styled(Button)(({ theme }) => ({
   color: theme.palette.resume[50],
   borderColor: alpha(theme.palette.resume[50], 0.8),
   ':hover': {
-    borderColor: theme.palette.resume[50],
-    backgroundColor: alpha(theme.palette.resume[50], 0.04),
+    borderColor: theme.palette.resume[500],
+    backgroundColor: alpha(theme.palette.resume[500], 0.04),
+    color: theme.palette.resume[500],
   },
 }));

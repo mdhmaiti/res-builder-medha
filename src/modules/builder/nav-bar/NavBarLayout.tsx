@@ -26,6 +26,7 @@ import { useBasicDetails } from 'src/stores/basic';
 import { useEducations } from 'src/stores/education';
 import { useExperiences } from 'src/stores/experience';
 import { useVoluteeringStore } from 'src/stores/volunteering';
+import { ExportAsDocx } from './components/ExportAsDocx';
 
 const TOTAL_TEMPLATES_AVAILABLE = Object.keys(AVAILABLE_TEMPLATES).length;
 
@@ -119,9 +120,9 @@ const NavBarLayout = () => {
   }, []);
 
   return (
-    <nav className="h-full w-full  bg-cyan-700 relative flex py-2.5 pl-5 pr-4 items-center shadow-level-8dp z-20 print:hidden">
+    <nav className="h-full w-full  #ffffff relative flex py-2.5 pl-5 pr-4 items-center shadow-level-8dp z-20 print:hidden">
       <Link href="/">
-        <Image src={'/icons/resume-icon.png'} alt="logo" height="106" width="106" />
+        <Image src={'/icons/resume-icon.png'} alt="logo" height="156" width="256" className='ml-20' />
       </Link>
       <div className="flex-auto flex justify-between items-center ml-5">
         <NavBarMenu children={undefined}>
@@ -158,7 +159,8 @@ const NavBarLayout = () => {
             popoverChildren={<TemplateSelect />}
           />
           <NavMenuItem caption="choose a colour" popoverChildren={<ThemeSelect />} /> */}
-          <PrintResume />
+          <PrintResume/>
+          <ExportAsDocx />
         </NavBarActions>
       </div>
       <Toast

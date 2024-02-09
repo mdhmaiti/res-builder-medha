@@ -15,7 +15,7 @@ export const PrintResume = () => {
   }, []);
 
   return (
-    <StyledButton onClick={globalThis?.print} variant="outlined">
+    <StyledButton onClick={globalThis?.print} variant="outlined" className='bg-cyan-700'>
       <IoMdDownload size="1.5rem" className='mr-2'/>
       Download
     </StyledButton>

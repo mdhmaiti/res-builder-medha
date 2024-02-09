@@ -8,6 +8,7 @@ import { ProfileContact } from '../atoms/ProfileContact';
 import { ProfileImage } from 'src/helpers/common/components/ProfileImage';
 import { ProfileName } from '../atoms/ProfileName';
 import { SectionSubtitle } from '../atoms/SectionSubtitle';
+import { Tooltip } from '@mui/material';
 
 export const BasicIntro = ({
   name,
@@ -57,51 +58,65 @@ export const BasicIntro = ({
           )}
           {linkedin && (
             <div className="flex gap-1 ml-1 items-center">
+              <Tooltip title="LinkedIn">
               <a href={linkedin} target="_blank" rel="noopener noreferrer" className="ml-1">
                 <BsLinkedin />
               </a>
+              </Tooltip>
             </div>
           )}
           {twitter && (
             <div className="flex gap-1 ml-1 items-center">
+              <Tooltip title="Twitter">
               <a href={twitter} target="_blank" rel="noopener noreferrer" className="ml-1">
                 <BsTwitter />
               </a>
+              </Tooltip>
             </div>
           )}
           {github && (
             <div className="flex gap-1 ml-1 items-center">
+              <Tooltip title="Github">
               <a href={github} target="_blank" rel="noopener noreferrer" className="ml-1">
                 <BsGithub />
               </a>
+              </Tooltip>
             </div>
           )}
           {hackerrank && (
             <div className="flex gap-1 ml-1 items-center">
+              <Tooltip title="Hackerrank">
               <a href={hackerrank} target="_blank" rel="noopener noreferrer" className="ml-1">
                 <FaHackerrank />
               </a>
+              </Tooltip>
             </div>
           )}
           {hackerearth && (
             <div className="flex gap-1 ml-1 items-center">
+              <Tooltip title="Hackerearth">
               <a href={hackerearth} target="_blank" rel="noopener noreferrer" className="ml-1">
                 <SiHackerearth />
               </a>
+              </Tooltip>
             </div>
           )}
           {codechef && (
             <div className="flex gap-1 ml-1 items-center">
+              <Tooltip title="Codechef">
               <a href={codechef} target="_blank" rel="noopener noreferrer" className="ml-1">
                 <SiCodechef />
               </a>
+              </Tooltip>
             </div>
           )}
           {leetcode && (
             <div className="flex gap-1 ml-1 items-center">
+              <Tooltip title="Leetcode">
               <a href={leetcode} target="_blank" rel="noopener noreferrer" className="ml-1">
                 <SiLeetcode />
               </a>
+              </Tooltip>
             </div>
           )}
         </div>
