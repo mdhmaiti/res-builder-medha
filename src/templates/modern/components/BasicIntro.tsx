@@ -60,6 +60,7 @@ export const BasicIntro = ({
             <div className="flex gap-1 ml-1 items-center">
               <Tooltip title="LinkedIn">
               <a href={linkedin} target="_blank" rel="noopener noreferrer" className="ml-1">
+                <img src="" alt="LinkedIn" className='hidden'/>
                 <BsLinkedin />
               </a>
               </Tooltip>
@@ -69,6 +70,7 @@ export const BasicIntro = ({
             <div className="flex gap-1 ml-1 items-center">
               <Tooltip title="Twitter">
               <a href={twitter} target="_blank" rel="noopener noreferrer" className="ml-1">
+                <img src="" alt="Twitter" className='hidden'/>
                 <BsTwitter />
               </a>
               </Tooltip>
@@ -78,6 +80,7 @@ export const BasicIntro = ({
             <div className="flex gap-1 ml-1 items-center">
               <Tooltip title="Github">
               <a href={github} target="_blank" rel="noopener noreferrer" className="ml-1">
+              <img src="" alt="Github" className='hidden'/>
                 <BsGithub />
               </a>
               </Tooltip>
@@ -87,6 +90,7 @@ export const BasicIntro = ({
             <div className="flex gap-1 ml-1 items-center">
               <Tooltip title="Hackerrank">
               <a href={hackerrank} target="_blank" rel="noopener noreferrer" className="ml-1">
+              <img src="" alt="Hackerrank" className='hidden'/>
                 <FaHackerrank />
               </a>
               </Tooltip>
@@ -96,6 +100,7 @@ export const BasicIntro = ({
             <div className="flex gap-1 ml-1 items-center">
               <Tooltip title="Hackerearth">
               <a href={hackerearth} target="_blank" rel="noopener noreferrer" className="ml-1">
+              <img src="" alt="Hackerearth" className='hidden'/>
                 <SiHackerearth />
               </a>
               </Tooltip>
@@ -105,6 +110,7 @@ export const BasicIntro = ({
             <div className="flex gap-1 ml-1 items-center">
               <Tooltip title="Codechef">
               <a href={codechef} target="_blank" rel="noopener noreferrer" className="ml-1">
+              <img src="" alt="Codechef" className='hidden'/>
                 <SiCodechef />
               </a>
               </Tooltip>
@@ -114,6 +120,7 @@ export const BasicIntro = ({
             <div className="flex gap-1 ml-1 items-center">
               <Tooltip title="Leetcode">
               <a href={leetcode} target="_blank" rel="noopener noreferrer" className="ml-1">
+              <img src="" alt="Leetcode" className='hidden'/>
                 <SiLeetcode />
               </a>
               </Tooltip>
@@ -121,7 +128,7 @@ export const BasicIntro = ({
           )}
         </div>
       </div>
-      <ProfileImage src={image} height="100px" width="100px" />
+      {/* <ProfileImage src={image} height="100px" width="100px" /> */}
     </div>
   );
 };
