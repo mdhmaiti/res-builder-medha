@@ -9,6 +9,8 @@ import { AwardSection } from './components/Awards';
 import { useContext } from 'react';
 import { StateContext } from 'src/modules/builder/resume/ResumeLayout';
 import { SectionValidator } from 'src/helpers/common/components/ValidSectionRenderer';
+import Achievements from '../professional/components/Achievements';
+import AchievementSection from './components/Achievements';
 
 export default function MordernTemplate() {
   const resumeData = useContext(StateContext);
@@ -41,8 +43,8 @@ export default function MordernTemplate() {
             <WorkSection experience={resumeData.work} />
           </SectionValidator>
 
-          <SectionValidator value={resumeData.awards}>
-            <AwardSection awardsReceived={resumeData.awards} />
+          <SectionValidator value={resumeData.volunteer}>
+            <VolunteerSection volunteer={resumeData.volunteer} />
           </SectionValidator>
         </div>
 
@@ -59,12 +61,16 @@ export default function MordernTemplate() {
             <SkillsSection title="Languages" list={resumeData.skills.languages} />
           </SectionValidator>
 
-          <SectionValidator value={resumeData.skills.technologies}>
-            <SkillsSection title="Technologies" list={resumeData.skills.technologies} />
-          </SectionValidator>
-
           <SectionValidator value={resumeData.skills.frameworks}>
             <SkillsSection title="Frameworks" list={resumeData.skills.frameworks} />
+          </SectionValidator>
+
+          <SectionValidator value={resumeData.skills.libraries}>
+            <SkillsSection title="Libraries" list={resumeData.skills.libraries} />
+          </SectionValidator>
+
+          <SectionValidator value={resumeData.skills.databases}>
+            <SkillsSection title="Databases" list={resumeData.skills.databases} />
           </SectionValidator>
 
           <SectionValidator value={resumeData.skills.tools}>
@@ -75,8 +81,8 @@ export default function MordernTemplate() {
             <EducationSection education={resumeData.education} />
           </SectionValidator>
 
-          <SectionValidator value={resumeData.volunteer}>
-            <VolunteerSection volunteer={resumeData.volunteer} />
+          <SectionValidator value={resumeData.activities.achievements}>
+            <AchievementSection data={resumeData.activities.achievements} />
           </SectionValidator>
         </div>
       </div>

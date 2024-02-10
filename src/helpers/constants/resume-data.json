@@ -59,13 +59,11 @@
   "skills": {
     "skill":[
       { "name": "Public speaking", "level": 3 },
-      { "name": "Photoshop", "level": 3 },
-      { "name": "Video Editing", "level": 3 }
+      { "name": "Photoshop", "level": 3 }
     ],
     "languages": [
       { "name": "JavaScript", "level": 90 },
-      { "name": "HTML5", "level": 80 },
-      { "name": "CSS", "level": 80 }
+      { "name": "HTML5", "level": 80 }
     ],
     "frameworks": [
       { "name": "React", "level": 70 },
@@ -82,14 +80,11 @@
     "databases": [{ "name": "Firebase", "level": 3 }],
     "practices": [
       { "name": "Agile methodology", "level": 3 },
-      { "name": "Design Patterns", "level": 3 },
-      { "name": "Test Driven Development", "level": 3 }
+      { "name": "Design Patterns", "level": 3 }
     ],
     "tools": [
       { "name": "Git", "level": 3 },
-      { "name": "VS Code", "level": 3 },
-      { "name": "Jira", "level": 3 },
-      { "name": "Webpack", "level": 3 }
+      { "name": "VS Code", "level": 3 }
     ]
   },
 

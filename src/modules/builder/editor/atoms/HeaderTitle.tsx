@@ -14,8 +14,8 @@ const HeaderTitle = ({ title }: { title: string }) => (
     {title == 'Education' && <PiCertificateFill size="1.5rem" />}
     {title == 'Experience' && <RiUserStarFill size="1.5rem" />}
     {title == 'Projects' && <MdAssignmentAdd size="1.5rem" />}
-    {title == 'Activities' && <FaFileSignature size="1.5rem" />}
-    {title == 'Awards' && <FaTrophy size="1.5rem" />}
+    {title == 'Achievements' && <FaFileSignature size="1.5rem" />}
+    {/* {title == 'Awards' && <FaTrophy size="1.5rem" />} */}
     <p className="text-xl ml-5">{title}</p>
 
     <div className="ml-auto pl-4 flex items-center">

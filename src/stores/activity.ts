@@ -18,13 +18,13 @@ const updateAchievements = (set: SetState<IActivityStore>) => (achievements: str
   );
 };
 
-const updateInvolvements = (set: SetState<IActivityStore>) => (involvements: string) => {
-  set(
-    produce((state: IActivityStore) => {
-      state.activities.involvements = involvements;
-    })
-  );
-};
+// const updateInvolvements = (set: SetState<IActivityStore>) => (involvements: string) => {
+//   set(
+//     produce((state: IActivityStore) => {
+//       state.activities.involvements = involvements;
+//     })
+//   );
+// };
 
 export const useActivity = create<IActivityStore>(
   persist(
@@ -34,7 +34,7 @@ export const useActivity = create<IActivityStore>(
       get: () => get().activities,
       reset: setAllAwards(set),
       updateAchievements: updateAchievements(set),
-      updateInvolvements: updateInvolvements(set),
+      // updateInvolvements: updateInvolvements(set),
     }),
     { name: 'activities' }
   )

@@ -13,6 +13,7 @@ import { StateContext } from 'src/modules/builder/resume/ResumeLayout';
 import UnratedSkills from './components/UnratedSkills';
 import Work from './components/Work';
 import styled from '@emotion/styled';
+import { Volunteer } from './components/Volunteer';
 
 const ResumeContainer = styled.div`
   display: flex;
@@ -45,7 +46,7 @@ const RightSection = styled.div`
 export default function ProfessionalTemplate() {
   const resumeData = useContext(StateContext);
   const skills = resumeData.skills;
-  const involvements = resumeData.activities.involvements;
+  // const involvements = resumeData.activities.involvements;
   const achievements = resumeData.activities.achievements;
 
   return (
@@ -64,15 +65,9 @@ export default function ProfessionalTemplate() {
           </Section>
         </SectionValidator>
 
-        <SectionValidator value={involvements}>
-          <Section title="Key Projects / Involvements">
-            <Involvement data={involvements} />
-          </Section>
-        </SectionValidator>
-
-        <SectionValidator value={achievements}>
-          <Section title="Certificates and Awards">
-            <Achievements data={achievements} />
+        <SectionValidator value={resumeData.volunteer}>
+          <Section title="Projects">
+            <Volunteer volunteer={resumeData.volunteer} />
           </Section>
         </SectionValidator>
       </LeftSection>
@@ -96,30 +91,39 @@ export default function ProfessionalTemplate() {
           </Section>
         </SectionValidator>
 
-        <SectionValidator value={skills.languages.concat(skills.frameworks)}>
-          <Section title="Technical expertise">
-            <RatedSkills items={skills.languages.concat(skills.frameworks)} />
+        <SectionValidator value={skills.languages}>
+          <Section title="Languages">
+            <RatedSkills items={skills.languages} />
           </Section>
         </SectionValidator>
 
-        <SectionValidator value={skills.technologies.concat(skills.libraries, skills.databases)}>
+        <SectionValidator value={skills.frameworks}>
+          <Section title="Frameworks">
+            <RatedSkills items={skills.frameworks} />
+          </Section>
+        </SectionValidator>
+
+        <SectionValidator value={skills.libraries.concat(skills.databases)}>
           <Section title="Skills / Exposure">
-            <UnratedSkills items={skills.technologies.concat(skills.libraries, skills.databases)} />
+            <UnratedSkills items={skills.libraries.concat(skills.databases)} />
           </Section>
         </SectionValidator>
-        <SectionValidator value={skills.practices}>
-          <Section title="Methodology/Approach">
-            <UnratedSkills items={skills.practices} />
-          </Section>
-        </SectionValidator>
+        
         <SectionValidator value={skills.tools}>
           <Section title="Tools">
             <UnratedSkills items={skills.tools} />
           </Section>
         </SectionValidator>
+
         <SectionValidator value={resumeData.education}>
           <Section title="Education">
             <Education education={resumeData.education} />
+          </Section>
+        </SectionValidator>
+
+        <SectionValidator value={achievements}>
+          <Section title="Achievements">
+            <Achievements data={achievements} />
           </Section>
         </SectionValidator>
       </RightSection>

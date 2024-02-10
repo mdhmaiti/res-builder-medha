@@ -15,11 +15,11 @@ export interface IAllActivityTabs {
 }
 
 const allActivityTabs: IAllActivityTabs = {
-  involvements: {
-    key: 'involvements',
-    label: 'Involvements',
-    component: Involvements,
-  },
+  // involvements: {
+  //   key: 'involvements',
+  //   label: 'Involvements',
+  //   component: Involvements,
+  // },
   achievements: {
     key: 'achievements',
     label: 'Achievements',
@@ -28,7 +28,7 @@ const allActivityTabs: IAllActivityTabs = {
 };
 
 const ActivitiesLayout = () => {
-  const [activeTab, setActiveTab] = useState(allActivityTabs['involvements']);
+  const [activeTab, setActiveTab] = useState(allActivityTabs['achievements']);
 
   const changeActiveTab = (event: SyntheticEvent, key: string) => {
     const selectedTab = allActivityTabs[key];

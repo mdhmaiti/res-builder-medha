@@ -17,10 +17,8 @@ const SkillsLayout = () => {
     useGeneralSkills(),
     useLanguages(),
     useFrameworks(),
-    useTechnologies(),
     useLibraries(),
     useDatabases(),
-    usePractices(),
     useTools(),
   ];
 
