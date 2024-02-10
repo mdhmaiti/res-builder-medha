@@ -69,17 +69,19 @@ const Contacts = ({
         }}
       />
       <TextField
-        label="Relevant Experience"
+        label="Relevant Experience (in years)"
         variant="filled"
         value={basicTabs.relExp}
+        type="number"
         onChange={(event: ChangeEvent<HTMLInputElement>) => {
           onChangeHandler(event.target.value, 'relExp');
         }}
       />
       <TextField
-        label="Total Experience"
+        label="Total Experience (in years)"
         variant="filled"
         value={basicTabs.totalExp}
+        type="number"
         onChange={(event: ChangeEvent<HTMLInputElement>) => {
           onChangeHandler(event.target.value, 'totalExp');
         }}

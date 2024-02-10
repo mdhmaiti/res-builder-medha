@@ -14,9 +14,9 @@ export default function BasicIntro({ basics }: { basics: IBasics }) {
         <Role className="text-sm">{basics.label}</Role>
         <span className="text-xs">
           Relevant experience:&nbsp;
-          <strong>{basics.relExp}</strong>
+          <strong>{basics.relExp} years</strong>
         </span>
-        <span className="text-xs">Total experience:&nbsp;{basics.totalExp}</span>
+        <span className="text-xs">Total experience:&nbsp;{basics.totalExp} years</span>
       </div>
 
       <div className="flex flex-col justify-end gap-2">
