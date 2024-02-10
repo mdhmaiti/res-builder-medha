@@ -6,7 +6,6 @@ import { Button } from '@mui/material';
 import FeatureSection from './components/Feature';
 import Image from 'next/image';
 import Link from 'next/link';
-// import Person from './components/Person';
 
 const HomeLayout = () => {
   const controls = useAnimation();
