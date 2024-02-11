@@ -23,7 +23,7 @@ const EditorLayout = () => {
   );
 
   return (
-    <ErrorBoundary>
+    // <ErrorBoundary>
       <div className=" h-full  p-6 overflow-auto relative no-scrollbar shadow-level-4dp bg-cyan-700">
         {displayElement}
 
@@ -34,7 +34,7 @@ const EditorLayout = () => {
           </OutlinedButton>
         </div>
       </div>
-    </ErrorBoundary>
+    // </ErrorBoundary>
   );
 };
 
