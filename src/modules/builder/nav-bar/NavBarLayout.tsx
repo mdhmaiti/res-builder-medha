@@ -126,15 +126,22 @@ const NavBarLayout = () => {
   return (
     <nav className="h-full w-full  #ffffff relative flex py-2.5 pl-5 pr-4 items-center shadow-level-8dp z-20 print:hidden">
       <Link href="/">
-        <Image src={'/icons/resume-icon.png'} alt="logo" height="180" width="256" className='ml-20' />
+        <Image
+          src={'/icons/resume-icon.png'}
+          alt="logo"
+          height="180"
+          width="256"
+          className="ml-20"
+        />
       </Link>
       <div className="flex-auto flex justify-between items-center ml-5">
-        <NavBarMenu children={undefined}>
+        <NavBarMenu>
           {/* <NavMenuItem
             caption={`choose a template`}
             popoverChildren={<TemplateSelect />}
           />
           <NavMenuItem caption="choose a colour" popoverChildren={<ThemeSelect />} /> */}
+          <div></div>
         </NavBarMenu>
         <NavBarActions>
           {/* <StyledButton variant="text" onClick={exportResumeData}>
@@ -163,7 +170,7 @@ const NavBarLayout = () => {
             popoverChildren={<TemplateSelect />}
           />
           <NavMenuItem caption="choose a colour" popoverChildren={<ThemeSelect />} /> */}
-          <PrintResume/>
+          <PrintResume />
           <ExportAsDocx />
         </NavBarActions>
       </div>

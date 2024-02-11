@@ -59,70 +59,70 @@ export const BasicIntro = ({
           {linkedin && (
             <div className="flex gap-1 ml-1 items-center">
               <Tooltip title="LinkedIn">
-              <a href={linkedin} target="_blank" rel="noopener noreferrer" className="ml-1">
-                <img src="" alt="LinkedIn" className='hidden'/>
-                <BsLinkedin />
-              </a>
+                <a href={linkedin} target="_blank" rel="noopener noreferrer" className="ml-1">
+                  <img src="" alt="LinkedIn" className="hidden" />
+                  <BsLinkedin />
+                </a>
               </Tooltip>
             </div>
           )}
           {twitter && (
             <div className="flex gap-1 ml-1 items-center">
               <Tooltip title="Twitter">
-              <a href={twitter} target="_blank" rel="noopener noreferrer" className="ml-1">
-                <img src="" alt="Twitter" className='hidden'/>
-                <BsTwitter />
-              </a>
+                <a href={twitter} target="_blank" rel="noopener noreferrer" className="ml-1">
+                  <img src="" alt="Twitter" className="hidden" />
+                  <BsTwitter />
+                </a>
               </Tooltip>
             </div>
           )}
           {github && (
             <div className="flex gap-1 ml-1 items-center">
               <Tooltip title="Github">
-              <a href={github} target="_blank" rel="noopener noreferrer" className="ml-1">
-              <img src="" alt="Github" className='hidden'/>
-                <BsGithub />
-              </a>
+                <a href={github} target="_blank" rel="noopener noreferrer" className="ml-1">
+                  <img src="" alt="Github" className="hidden" />
+                  <BsGithub />
+                </a>
               </Tooltip>
             </div>
           )}
           {hackerrank && (
             <div className="flex gap-1 ml-1 items-center">
               <Tooltip title="Hackerrank">
-              <a href={hackerrank} target="_blank" rel="noopener noreferrer" className="ml-1">
-              <img src="" alt="Hackerrank" className='hidden'/>
-                <FaHackerrank />
-              </a>
+                <a href={hackerrank} target="_blank" rel="noopener noreferrer" className="ml-1">
+                  <img src="" alt="Hackerrank" className="hidden" />
+                  <FaHackerrank />
+                </a>
               </Tooltip>
             </div>
           )}
           {hackerearth && (
             <div className="flex gap-1 ml-1 items-center">
               <Tooltip title="Hackerearth">
-              <a href={hackerearth} target="_blank" rel="noopener noreferrer" className="ml-1">
-              <img src="" alt="Hackerearth" className='hidden'/>
-                <SiHackerearth />
-              </a>
+                <a href={hackerearth} target="_blank" rel="noopener noreferrer" className="ml-1">
+                  <img src="" alt="Hackerearth" className="hidden" />
+                  <SiHackerearth />
+                </a>
               </Tooltip>
             </div>
           )}
           {codechef && (
             <div className="flex gap-1 ml-1 items-center">
               <Tooltip title="Codechef">
-              <a href={codechef} target="_blank" rel="noopener noreferrer" className="ml-1">
-              <img src="" alt="Codechef" className='hidden'/>
-                <SiCodechef />
-              </a>
+                <a href={codechef} target="_blank" rel="noopener noreferrer" className="ml-1">
+                  <img src="" alt="Codechef" className="hidden" />
+                  <SiCodechef />
+                </a>
               </Tooltip>
             </div>
           )}
           {leetcode && (
             <div className="flex gap-1 ml-1 items-center">
               <Tooltip title="Leetcode">
-              <a href={leetcode} target="_blank" rel="noopener noreferrer" className="ml-1">
-              <img src="" alt="Leetcode" className='hidden'/>
-                <SiLeetcode />
-              </a>
+                <a href={leetcode} target="_blank" rel="noopener noreferrer" className="ml-1">
+                  <img src="" alt="Leetcode" className="hidden" />
+                  <SiLeetcode />
+                </a>
               </Tooltip>
             </div>
           )}

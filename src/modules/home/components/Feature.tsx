@@ -17,18 +17,14 @@ function FeatureSection() {
         <CardPinnnedIcon>
           <Image src="/icons/speed.svg" alt="speed" height="56" width="56" />
         </CardPinnnedIcon>
-        <p className="text-xl mr-14">
-          Where Your Resume Tells Your Story of Success!
-        </p>
+        <p className="text-xl mr-14">Where Your Resume Tells Your Story of Success!</p>
       </FeatureCard>
 
       <FeatureCard>
         <CardPinnnedIcon>
           <Image src="/icons/magic.svg" alt="magic" height="56" width="56" />
         </CardPinnnedIcon>
-        <p className="text-xl mr-14">
-            Crafting Careers, One Resume at a Time!
-        </p>
+        <p className="text-xl mr-14">Crafting Careers, One Resume at a Time!</p>
       </FeatureCard>
 
       <FeatureCard>

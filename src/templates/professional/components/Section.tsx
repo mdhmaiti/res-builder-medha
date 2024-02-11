@@ -40,16 +40,16 @@ function SocialIcons({ profiles }: { profiles: IProfiles[] }) {
           Icon &&
           profile.url && (
             <Tooltip title={profile.network}>
-            <a
-              href={profile.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="ml-2"
-              key={profile.network}
-            >
-              <img src="" alt={profile.network} className='hidden'/>
-              <Icon className="h-5 w-5 bg-white" />
-            </a>
+              <a
+                href={profile.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="ml-2"
+                key={profile.network}
+              >
+                <img src="" alt={profile.network} className="hidden" />
+                <Icon className="h-5 w-5 bg-white" />
+              </a>
             </Tooltip>
           )
         );

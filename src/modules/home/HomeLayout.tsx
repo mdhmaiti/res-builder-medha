@@ -25,7 +25,13 @@ const HomeLayout = () => {
     <motion.div initial={{ opacity: 0 }} animate={{ opacity: [0, 1] }} className="scroll-smooth">
       <nav className="h-full w-full  #ffffff relative flex py-2.5 pl-5 pr-4  items-center shadow-level-8dp">
         <Link href="/">
-          <Image src={'/icons/resume-icon.png'} alt="logo" height="180" width="256" className='ml-20'/>
+          <Image
+            src={'/icons/resume-icon.png'}
+            alt="logo"
+            height="180"
+            width="256"
+            className="ml-20"
+          />
         </Link>
         <div className="flex-auto flex justify-between items-center ml-5">
           {/* <NavBarActions>
