@@ -34,7 +34,9 @@ export const ResumeLayout = () => {
       >
         <div className="w-[210mm] h-[296mm] bg-white my-0 mx-auto">
           <StateContext.Provider value={resumeData}>
-            <ThemeProvider theme={selectedTheme}><Template/></ThemeProvider>
+            <ThemeProvider theme={selectedTheme}>
+              <Template />
+            </ThemeProvider>
           </StateContext.Provider>
         </div>
       </div>
