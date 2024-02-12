@@ -23,9 +23,9 @@ const EditorLayout = () => {
   );
 
   return (
-    <div className=" h-full  p-6 overflow-auto relative no-scrollbar shadow-level-4dp bg-cyan-700">
+    <div className=" h-full  p-1 overflow-auto relative no-scrollbar shadow-level-4dp bg-cyan-700 text-xs">
       {displayElement}
-      <div className="mt-8 text-white p-3 m-2">
+      <div className="mt-8 text-white p-2 m-2">
         <OutlinedButton onClick={resetResumeStore}>
           <IoArrowUndo size="1.2rem" />
           <span className="ml-3">Reset</span>
