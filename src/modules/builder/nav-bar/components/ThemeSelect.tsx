@@ -13,7 +13,7 @@ export const ThemeSelect = () => {
   };
 
   return (
-    <div className={`h-[auto] w-[475px]  flex flex-col px-9 py-7 border:none`}>
+    <div className={`h-[auto] w-[auto]  flex flex-col py-7 border:none`}>
       {/* <span className="text-resume-800 font-bold text-lg mb-2">Choose a resume colour scheme</span> */}
       <div className="w-full flex flex-row justify-evenly border:none">
         {SYSTEM_COLORS.map((themeObject) => {
