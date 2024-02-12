@@ -4,10 +4,10 @@ import { StyledButton } from '../atoms';
 import { IoMdDownload } from 'react-icons/io';
 
 export const ExportAsDocx = () => {
-  let [elementVal, setTextContent] = useState('false');
+  const [elementVal, setTextContent] = useState('false');
 
   useEffect(() => {
-    let element = document.getElementById('source-html');
+    const element = document.getElementById('source-html');
     if (element) {
       setTextContent(element.innerHTML);
     }
@@ -19,15 +19,16 @@ export const ExportAsDocx = () => {
       id="btn-export"
       className="bg-cyan-700"
       onClick={() => {
-        let header =
+        const header =
           "<html xmlns:o='urn:schemas-microsoft-com:office:office' " +
           "xmlns:w='urn:schemas-microsoft-com:office:word' " +
           "xmlns='http://www.w3.org/TR/REC-html40'>" +
           "<head><meta charset='utf-8'><title>Export HTML to Word Document with JavaScript</title></head><body>";
-        let footer = '</body></html>';
-        let sourceHTML = header + elementVal + footer;
-        let source = 'data:application/vnd.ms-word;charset=utf-8,' + encodeURIComponent(sourceHTML);
-        let fileDownload = document.createElement('a');
+        const footer = '</body></html>';
+        const sourceHTML = header + elementVal + footer;
+        const source =
+          'data:application/vnd.ms-word;charset=utf-8,' + encodeURIComponent(sourceHTML);
+        const fileDownload = document.createElement('a');
         document.body.appendChild(fileDownload);
         fileDownload.href = source;
         fileDownload.download = 'document.doc';
