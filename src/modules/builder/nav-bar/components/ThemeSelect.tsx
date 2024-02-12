@@ -22,7 +22,7 @@ export const ThemeSelect = () => {
             // <div></div>
             <div
               key={themeObject.id}
-              className={`w-6 h-6 flex  justify-evenly items-center py-[14px] px-4 hover:cursor-pointer border:none`}
+              className={`w-5 h-5 flex  justify-evenly items-center py-[14px] px-3 hover:cursor-pointer border:none`}
               onClick={() => handleActiveTheme(themeObject)}
             >
               <ColorBoxWrapper>

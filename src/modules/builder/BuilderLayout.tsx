@@ -23,7 +23,7 @@ const BuilderLayout = () => {
             <ResumeLayout />
           </div>
         </div>
-        <aside className="w-[20vw] min-w-[18rem] print:hidden">
+        <aside className="w-[16vw] min-w-[12rem] print:hidden">
           <EditorLayoutRight />
         </aside>
       </main>
