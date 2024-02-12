@@ -11,7 +11,7 @@ const BuilderLayout = () => {
     <div className="flex flex-col h-screen">
       <NavBarLayout />
       <main className="flex flex-1 max-h-[calc(100vh_-_5.5rem)] print:max-h-fit">
-        <aside className="w-[22vw] min-w-[19rem] max-w-[21vw] print:hidden">
+        <aside className="w-[22vw] min-w-[15rem] max-w-[21vw] print:hidden">
           <EditorLayout />
         </aside>
         <div className="min-w-[30vw] flex flex-col flex-1 justify-center bg-custom-grey100 print:bg-white">
@@ -23,7 +23,7 @@ const BuilderLayout = () => {
             <ResumeLayout />
           </div>
         </div>
-        <aside className="w-[20vw] min-w-[19rem] print:hidden">
+        <aside className="w-[20vw] min-w-[18rem] print:hidden">
           <EditorLayoutRight />
         </aside>
       </main>
