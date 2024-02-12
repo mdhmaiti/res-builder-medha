@@ -31,9 +31,9 @@ export const ThemeSelect = () => {
                 <ColorBox bgColor={themeObject.titleColor} />
                 {/* <ColorBox bgColor={themeObject.highlighterColor} /> */}
               </ColorBoxWrapper>
-              {isActive && (
+              {/* {isActive && (
                 <Image src={'/icons/selected-tick.svg'} alt="logo" width="28" height="20" />
-              )}
+              )} */}
             </div>
           );
         })}
