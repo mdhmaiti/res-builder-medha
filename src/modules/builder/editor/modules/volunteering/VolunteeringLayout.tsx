@@ -1,4 +1,4 @@
-//company
+//projects
 import { useEffect, useState } from 'react';
 import { useVoluteeringStore } from 'src/stores/volunteering';
 import AddVolunteeringExp from './components/AddVolunteering';
@@ -7,6 +7,8 @@ import Volunteering from './components/Volunteer';
 import MoveEditSection from 'src/helpers/common/components/MoveEditSectionContainer';
 import { useCounter } from 'src/stores/useCounter';
 import Checkbox from '@mui/material/Checkbox';
+import { useTipProjects } from 'src/stores/useTip';
+import { Button } from '@mui/material';
 
 const VolunteeringLayout = () => {
   const allVolunteeringExps = useVoluteeringStore((state) => state.volunteeredExps);
@@ -32,6 +34,7 @@ const VolunteeringLayout = () => {
       decreaseCounter(); // Decrease counter if unchecked
     }
   };
+  const { isTipVisible6, showTip, hideTip } = useTipProjects();
 
   return (
     <div className="flex flex-col gap-8 mb-8">
@@ -40,6 +43,9 @@ const VolunteeringLayout = () => {
         <Checkbox onChange={handleCounterChange} checked={useCounter.getState().counter > 5} />
         <span className="text-slate-100 text-xl font-bold"> check if complete</span>
       </div> */}
+      <Button variant="contained" onClick={isTipVisible6 ? hideTip : showTip}>
+        {isTipVisible6 ? 'Hide Tip' : 'Show Tip'}
+      </Button>
       {allVolunteeringExps.map((volunteeringInfo, index) => (
         <MoveEditSection
           key={volunteeringInfo.id}

@@ -4,6 +4,8 @@ import BasicHeader from './components/BasicHeader';
 import BasicPanel from './components/BasicPanel';
 import Checkbox from '@mui/material/Checkbox';
 import { useCounter } from 'src/stores/useCounter';
+import { useTipPersonal } from 'src/stores/useTip';
+import { Button } from '@mui/material';
 const tabTitles = ['Contacts', 'Links', 'About'];
 
 const BasicLayout = () => {
@@ -22,6 +24,7 @@ const BasicLayout = () => {
       decreaseCounter(); // Decrease counter if unchecked
     }
   };
+  const { isTipVisible1, showTip, hideTip } = useTipPersonal();
 
   return (
     <Fragment>
@@ -34,6 +37,9 @@ const BasicLayout = () => {
         />
         <span className="text-slate-100 text-xl font-bold"> check if complete</span>
       </div> */}
+      <Button variant="contained" onClick={isTipVisible1 ? hideTip : showTip}>
+        {isTipVisible1 ? 'Hide Tip' : 'Show Tip'}
+      </Button>
       <BasicHeader
         activeTab={activeTab}
         changeActiveTab={changeActiveTab}

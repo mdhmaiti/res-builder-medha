@@ -13,6 +13,8 @@ import EditSectionContainer from 'src/helpers/common/components/EditSectionConta
 import Skill from './components/Skill';
 import Checkbox from '@mui/material/Checkbox';
 import { useCounter } from 'src/stores/useCounter';
+import { useTipSkillExp } from 'src/stores/useTip';
+import { Button } from '@mui/material';
 
 const SkillsLayout = () => {
   const skillState = [
@@ -37,6 +39,7 @@ const SkillsLayout = () => {
       decreaseCounter(); // Decrease counter if unchecked
     }
   };
+  const { isTipVisible2, showTip, hideTip } = useTipSkillExp();
   return (
     <div className="flex flex-col gap-8 mb-8">
       {/* <div className="flex flex-row  items-center gap-2">
@@ -44,6 +47,9 @@ const SkillsLayout = () => {
         <Checkbox onChange={handleCounterChange} checked={useCounter.getState().counter > 1} />
         <span className="text-slate-100 text-xl font-bold"> check if complete</span>
       </div> */}
+      <Button variant="contained" onClick={isTipVisible2 ? hideTip : showTip}>
+        {isTipVisible2 ? 'Hide Tip' : 'Show Tip'}
+      </Button>
       {skillState.map((state) => (
         <EditSectionContainer
           key={state.title}

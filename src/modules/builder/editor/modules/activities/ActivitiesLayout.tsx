@@ -5,6 +5,8 @@ import Achievements from './components/Achievements';
 import Involvements from './components/Involvements';
 import { useCounter } from 'src/stores/useCounter';
 import Checkbox from '@mui/material/Checkbox';
+import { Button } from '@mui/material';
+import { useTipAchievements } from 'src/stores/useTip';
 
 //achievement section
 export interface IActivityTab {
@@ -47,7 +49,7 @@ const ActivitiesLayout = () => {
       decreaseCounter(); // Decrease counter if unchecked
     }
   };
-
+  const { isTipVisible5, showTip, hideTip } = useTipAchievements();
   return (
     <Fragment>
       {/* <div className="flex flex-row  items-center gap-2">
@@ -55,6 +57,9 @@ const ActivitiesLayout = () => {
         <Checkbox onChange={handleCounterChange} checked={useCounter.getState().counter > 4} />
         <span className="text-slate-100 text-xl font-bold"> check if complete</span>
       </div> */}
+      <Button variant="contained" onClick={isTipVisible5 ? hideTip : showTip}>
+        {isTipVisible5 ? 'Hide Tip' : 'Show Tip'}
+      </Button>
       <BasicHeader
         activeTab={activeTab}
         changeActiveTab={changeActiveTab}
