@@ -35,11 +35,11 @@ const VolunteeringLayout = () => {
 
   return (
     <div className="flex flex-col gap-8 mb-8">
-      <div className="flex flex-row  items-center gap-2">
+      {/* <div className="flex flex-row  items-center gap-2">
         {' '}
         <Checkbox onChange={handleCounterChange} checked={useCounter.getState().counter > 5} />
         <span className="text-slate-100 text-xl font-bold"> check if complete</span>
-      </div>
+      </div> */}
       {allVolunteeringExps.map((volunteeringInfo, index) => (
         <MoveEditSection
           key={volunteeringInfo.id}
@@ -56,6 +56,15 @@ const VolunteeringLayout = () => {
         </MoveEditSection>
       ))}
       <AddVolunteeringExp handleChange={handleChange} isEmpty={allVolunteeringExps.length === 0} />
+      <div className="flex flex-row mt-3 items-center gap-2">
+        {' '}
+        <Checkbox
+          onChange={handleCounterChange}
+          checked={useCounter.getState().counter > 5}
+          disabled={useCounter.getState().counter > 6}
+        />
+        <span className="text-slate-100 text-xl font-bold"> check if complete</span>
+      </div>
     </div>
   );
 };

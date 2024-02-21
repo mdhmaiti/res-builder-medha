@@ -8,6 +8,7 @@ import Tooltip from '@mui/material/Tooltip';
 import Counter from './editor/ProgressbarCount';
 import Button from '@mui/material/Button';
 import { useState } from 'react';
+import Tip from './editor/Tip';
 
 const BuilderLayout = () => {
   const [showEditorRight, setShowEditorRight] = useState(true);
@@ -18,10 +19,13 @@ const BuilderLayout = () => {
     <div className="flex flex-col h-screen">
       <NavBarLayout />
 
-      <main className="flex flex-1 max-h-[calc(100vh_-_5.5rem)] print:max-h-fit">
-        <aside className="w-[22vw] min-w-[15rem] max-w-[21vw] print:hidden">
+      <main className="flex flex-1 max-h-[calc(100vh_-_5.5rem)] print:max-h-fit relative">
+        <aside className="w-[22vw] min-w-[15rem] max-w-[21vw] print:hidden ">
           <EditorLayout />
         </aside>
+        {/* <div className="absolute top-0 left-20 z-20">
+          <Tip />
+        </div> */}
 
         <div className="min-w-[30vw] flex flex-col flex-1 justify-center bg-custom-grey100 print:bg-white">
           {/* button to show and hide editor */}
@@ -43,10 +47,15 @@ const BuilderLayout = () => {
             <ResumeLayout />
           </div>
         </div>
-
         {/* Toggle visibility based on showEditorRight state */}
         {showEditorRight && (
-          <aside className="w-full print:hidden">
+          <aside
+            className={`w-fit print:hidden transition-transform transform ${
+              showEditorRight
+                ? 'translate-x-0 transition ease-out duration-500'
+                : '-translate-x-full transition ease-in duration-300'
+            }`}
+          >
             <EditorLayoutRight />
           </aside>
         )}

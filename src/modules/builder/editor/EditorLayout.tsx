@@ -33,11 +33,6 @@ const EditorLayout = () => {
   return (
     <div className="h-full p-1 overflow-auto relative no-scrollbar shadow-level-4dp bg-cyan-700 text-xs">
       {/* Button to toggle visibility of the Tip */}
-      <div className="flex justify-end mb-4">
-        <Button variant="outlined" className="text-slate-100 mt-2" onClick={toggleTip}>
-          Show Tip
-        </Button>
-      </div>
 
       {/* Display the Tip component if showTip is true */}
       {showTip && (
@@ -48,11 +43,16 @@ const EditorLayout = () => {
 
       {displayElement}
 
-      <div className="mt-8 text-white p-2 m-2">
+      <div className="mt-8 flex flex-row items-center gap-4 text-white p-2 m-2">
         <OutlinedButton onClick={resetResumeStore}>
           <IoArrowUndo size="1.2rem" />
           <span className="ml-3">Reset</span>
         </OutlinedButton>
+        {/* Button to toggle visibility of the Tip */}
+
+        <Button variant="outlined" className="text-slate-100 border-slate-200" onClick={toggleTip}>
+          {showTip ? 'Hide Tip' : 'Show Tip'}
+        </Button>
       </div>
     </div>
   );

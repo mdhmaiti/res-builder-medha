@@ -69,7 +69,7 @@ const ProgressbarCount: React.FC = () => {
       <div className="flex gap-1 items-center">
         <span>{currentIcon}</span>
         <LinearProgress
-          className="p-4 rounded-full w-full"
+          className="p-4 rounded-full w-full max-w-4xl"
           color="secondary"
           variant="determinate"
           value={progress}

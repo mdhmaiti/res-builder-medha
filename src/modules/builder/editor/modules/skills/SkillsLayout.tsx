@@ -39,11 +39,11 @@ const SkillsLayout = () => {
   };
   return (
     <div className="flex flex-col gap-8 mb-8">
-      <div className="flex flex-row  items-center gap-2">
+      {/* <div className="flex flex-row  items-center gap-2">
         {' '}
         <Checkbox onChange={handleCounterChange} checked={useCounter.getState().counter > 1} />
         <span className="text-slate-100 text-xl font-bold"> check if complete</span>
-      </div>
+      </div> */}
       {skillState.map((state) => (
         <EditSectionContainer
           key={state.title}
@@ -62,6 +62,15 @@ const SkillsLayout = () => {
           />
         </EditSectionContainer>
       ))}
+      <div className="flex flex-row mt-3 items-center gap-2">
+        {' '}
+        <Checkbox
+          onChange={handleCounterChange}
+          checked={useCounter.getState().counter > 1}
+          disabled={useCounter.getState().counter > 2}
+        />
+        <span className="text-slate-100 text-xl font-bold"> check if complete</span>
+      </div>
     </div>
   );
 };

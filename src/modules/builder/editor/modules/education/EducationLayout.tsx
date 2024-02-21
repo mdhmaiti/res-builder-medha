@@ -33,11 +33,11 @@ const EducationLayout = () => {
 
   return (
     <div className="flex flex-col gap-8 mb-8">
-      <div className="flex flex-row  items-center gap-2">
+      {/* <div className="flex flex-row  items-center gap-2">
         {' '}
         <Checkbox onChange={handleCounterChange} checked={useCounter.getState().counter > 2} />
         <span className="text-slate-100 text-xl font-bold"> check if complete</span>
-      </div>
+      </div> */}
 
       {allAcademics.map((education, index) => (
         <MoveEditSection
@@ -55,6 +55,15 @@ const EducationLayout = () => {
         </MoveEditSection>
       ))}
       <AddEducation handleChange={handleChange} isEmpty={allAcademics.length === 0} />
+      <div className="flex flex-row mt-3 items-center gap-2">
+        {' '}
+        <Checkbox
+          onChange={handleCounterChange}
+          checked={useCounter.getState().counter > 2}
+          disabled={useCounter.getState().counter > 3}
+        />
+        <span className="text-slate-100 text-xl font-bold"> check if complete</span>
+      </div>
     </div>
   );
 };

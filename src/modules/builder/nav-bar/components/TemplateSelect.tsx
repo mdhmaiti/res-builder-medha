@@ -16,7 +16,7 @@ export const StyledLink = styled(Link)(({ theme }) => ({
 
 export const TemplateSelect = () => {
   return (
-    <div className={`w-full h-full flex flex-col  shadow-2xl`}>
+    <div className={`w-96 h-full flex flex-col  shadow-2xl`}>
       <ThemeSelect />
 
       <TemplateSlider />

@@ -25,11 +25,15 @@ const BasicLayout = () => {
 
   return (
     <Fragment>
-      <div className="flex flex-row  items-center gap-2">
+      {/* <div className="flex flex-row  items-center gap-2">
         {' '}
-        <Checkbox onChange={handleCounterChange} checked={useCounter.getState().counter > 0} />
+        <Checkbox
+          onChange={handleCounterChange}
+          checked={useCounter.getState().counter > 0}
+          disabled={useCounter.getState().counter > 2}
+        />
         <span className="text-slate-100 text-xl font-bold"> check if complete</span>
-      </div>
+      </div> */}
       <BasicHeader
         activeTab={activeTab}
         changeActiveTab={changeActiveTab}
@@ -40,6 +44,15 @@ const BasicLayout = () => {
         basicTabs={basicTabs}
         onChangeText={onChangeText}
       ></BasicPanel>
+      <div className="flex flex-row mt-3 items-center gap-2">
+        {' '}
+        <Checkbox
+          onChange={handleCounterChange}
+          checked={useCounter.getState().counter > 0}
+          disabled={useCounter.getState().counter > 1}
+        />
+        <span className="text-slate-100 text-xl font-bold"> check if complete</span>
+      </div>
     </Fragment>
   );
 };

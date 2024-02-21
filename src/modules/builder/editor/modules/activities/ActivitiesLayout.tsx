@@ -50,17 +50,26 @@ const ActivitiesLayout = () => {
 
   return (
     <Fragment>
-      <div className="flex flex-row  items-center gap-2">
+      {/* <div className="flex flex-row  items-center gap-2">
         {' '}
         <Checkbox onChange={handleCounterChange} checked={useCounter.getState().counter > 4} />
         <span className="text-slate-100 text-xl font-bold"> check if complete</span>
-      </div>
+      </div> */}
       <BasicHeader
         activeTab={activeTab}
         changeActiveTab={changeActiveTab}
         tabs={allActivityTabs}
       ></BasicHeader>
       <BasicPanel activeTab={activeTab} />
+      <div className="flex flex-row mt-3 items-center gap-2">
+        {' '}
+        <Checkbox
+          onChange={handleCounterChange}
+          checked={useCounter.getState().counter > 4}
+          disabled={useCounter.getState().counter > 5}
+        />
+        <span className="text-slate-100 text-xl font-bold"> check if complete</span>
+      </div>
     </Fragment>
   );
 };
