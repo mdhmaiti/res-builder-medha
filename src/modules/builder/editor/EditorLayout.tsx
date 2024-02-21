@@ -11,7 +11,7 @@ import Button from '@mui/material/Button';
 
 const EditorLayout = () => {
   const [link, setLink] = useState('');
-  const [showTip, setShowTip] = useState(false); // State to track the visibility of the Tip
+  // client don't want this const [showTip, setShowTip] = useState(false); // State to track the visibility of the Tip
 
   const section = headers[link];
 
@@ -20,9 +20,9 @@ const EditorLayout = () => {
   };
 
   // Function to toggle visibility of the Tip
-  const toggleTip = () => {
-    setShowTip(!showTip);
-  };
+  // const toggleTip = () => {
+  //   setShowTip(!showTip);
+  // };
 
   const displayElement = link ? (
     <EditSection section={section} onLinkClick={linkClickHandler} />
@@ -35,11 +35,11 @@ const EditorLayout = () => {
       {/* Button to toggle visibility of the Tip */}
 
       {/* Display the Tip component if showTip is true */}
-      {showTip && (
+      {/* {showTip && (
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-50">
           <Tip />
         </div>
-      )}
+      )} */}
 
       {displayElement}
 
@@ -50,9 +50,9 @@ const EditorLayout = () => {
         </OutlinedButton>
         {/* Button to toggle visibility of the Tip */}
 
-        <Button variant="outlined" className="text-slate-100 border-slate-200" onClick={toggleTip}>
+        {/* <Button variant="outlined" className="text-slate-100 border-slate-200" onClick={toggleTip}>
           {showTip ? 'Hide Tip' : 'Show Tip'}
-        </Button>
+        </Button> */}
       </div>
     </div>
   );

@@ -29,14 +29,14 @@ const BuilderLayout = () => {
 
         <div className="min-w-[30vw] flex flex-col flex-1 justify-center bg-custom-grey100 print:bg-white">
           {/* button to show and hide editor */}
-          <Button
+          {/* <Button
             onClick={toggleEditorRight}
             className=" fixed bottom-12 right-5 bg-slate-400 z-10"
             variant="contained"
             color="primary"
           >
             {showEditorRight ? 'Hide Editor' : 'Show Editor'}
-          </Button>
+          </Button> */}
           <header className="w-[21mm] mt-5 mb-3 mx-auto print:hidden">
             <ResumeHeader />
             {/* <div className="w-full h-15 bg-cyan-950 text-center"> pwoihfbrb</div> */}
@@ -48,17 +48,16 @@ const BuilderLayout = () => {
           </div>
         </div>
         {/* Toggle visibility based on showEditorRight state */}
-        {showEditorRight && (
-          <aside
-            className={`w-fit print:hidden transition-transform transform ${
-              showEditorRight
-                ? 'translate-x-0 transition ease-out duration-500'
-                : '-translate-x-full transition ease-in duration-300'
-            }`}
-          >
-            <EditorLayoutRight />
-          </aside>
-        )}
+        {/* 
+        <aside
+          className={`w-fit print:hidden transition-transform transform ${
+            showEditorRight
+              ? 'translate-x-0 transition ease-out duration-500'
+              : '-translate-x-full transition ease-in duration-300'
+          }`}
+        >
+          <EditorLayoutRight />
+        </aside> */}
       </main>
 
       {/* 

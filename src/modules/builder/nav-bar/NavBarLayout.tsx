@@ -143,7 +143,7 @@ const NavBarLayout = () => {
           <NavMenuItem caption="choose a colour" popoverChildren={<ThemeSelect />} /> */}
           <div></div>
         </NavBarMenu>
-        <NavBarActions>
+        <div className="flex flex-row gap-2 items-center">
           {/* <StyledButton variant="text" onClick={exportResumeData}>
             Export
           </StyledButton>
@@ -170,9 +170,11 @@ const NavBarLayout = () => {
             popoverChildren={<TemplateSelect />}
           />
           <NavMenuItem caption="choose a colour" popoverChildren={<ThemeSelect />} /> */}
+
+          <ThemeSelect />
           <PrintResume />
           <ExportAsDocx />
-        </NavBarActions>
+        </div>
       </div>
       <Toast
         open={openToast}
