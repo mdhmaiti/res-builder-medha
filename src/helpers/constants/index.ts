@@ -44,20 +44,20 @@ export const SYSTEM_COLORS: IThemeColor[] = [
     highlighterColor: 'burlywood',
     id: 6,
   },
-  {
-    backgroundColor: '#FFFFFF',
-    fontColor: '#000000',
-    titleColor: '#4299e1',
-    highlighterColor: '#F556E5',
-    id: 7,
-  },
-  {
-    backgroundColor: '#FFFFFF',
-    fontColor: '#000000',
-    titleColor: '#48bb78',
-    highlighterColor: '#F556E5',
-    id: 8,
-  },
+  // {
+  //   backgroundColor: '#FFFFFF',
+  //   fontColor: '#000000',
+  //   titleColor: '#4299e1',
+  //   highlighterColor: '#F556E5',
+  //   id: 7,
+  // },
+  // {
+  //   backgroundColor: '#FFFFFF',
+  //   fontColor: '#000000',
+  //   titleColor: '#48bb78',
+  //   highlighterColor: '#F556E5',
+  //   id: 8,
+  // },
 ];
 
 export const AVAILABLE_TEMPLATES: ITemplate = {

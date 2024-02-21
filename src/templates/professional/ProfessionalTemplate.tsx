@@ -71,7 +71,6 @@ export default function ProfessionalTemplate() {
           </Section>
         </SectionValidator>
       </LeftSection>
-
       <RightSection>
         <SectionValidator value={resumeData.basics.summary}>
           <Section title="Summary">
@@ -108,7 +107,6 @@ export default function ProfessionalTemplate() {
             <UnratedSkills items={skills.libraries.concat(skills.databases)} />
           </Section>
         </SectionValidator>
-        
         <SectionValidator value={skills.tools}>
           <Section title="Tools">
             <UnratedSkills items={skills.tools} />

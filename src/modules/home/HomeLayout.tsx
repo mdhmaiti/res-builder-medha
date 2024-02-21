@@ -6,6 +6,8 @@ import { Button } from '@mui/material';
 import FeatureSection from './components/Feature';
 import Image from 'next/image';
 import Link from 'next/link';
+import { TemplateSelect } from '../builder/nav-bar/components/TemplateSelect';
+import { TemplateSlider } from '../builder/nav-bar/components/TemplatesSlider';
 
 const HomeLayout = () => {
   const controls = useAnimation();
@@ -25,7 +27,13 @@ const HomeLayout = () => {
     <motion.div initial={{ opacity: 0 }} animate={{ opacity: [0, 1] }} className="scroll-smooth">
       <nav className="h-full w-full  #ffffff relative flex py-2.5 pl-5 pr-4  items-center shadow-level-8dp">
         <Link href="/">
-          <Image src={'/icons/resume-icon.png'} alt="logo" height="180" width="256" className='ml-20'/>
+          <Image
+            src={'/icons/resume-icon.png'}
+            alt="logo"
+            height="180"
+            width="256"
+            className="ml-20"
+          />
         </Link>
         <div className="flex-auto flex justify-between items-center ml-5">
           {/* <NavBarActions>
@@ -65,7 +73,9 @@ const HomeLayout = () => {
             </div>
             <div className="col-span-12 sm:col-span-8">
               <h3 className="text-xl md:text-2xl mb-2 text-resume-400">Build your brand-new</h3>
-              <h1 className="text-5xl mb-12 text-resume-800">Professional Resume</h1>
+              <h1 className="text-5xl mb-12 text-orange-800 hover:text-orange-600">
+                Professional Resume
+              </h1>
 
               <div className="flex mb-10">
                 <div className="bg-resume-800 w-1 rounded-lg"></div>
@@ -75,11 +85,7 @@ const HomeLayout = () => {
                   —Mark Twain
                 </p> */}
               </div>
-              <Link href="/builder" passHref={true}>
-                <Button variant="contained" className="bg-cyan-500 mb-2">
-                  BUILD YOUR RESUME
-                </Button>
-              </Link>
+
               <p
                 className="xl:invisible text-resume-800"
                 style={{ fontFamily: "'Roboto Slab', serif" }}
@@ -90,8 +96,28 @@ const HomeLayout = () => {
           </motion.div>
         </div>
       </div>
-
       <motion.div
+        className=""
+        initial={{ opacity: 0 }}
+        animate={animationEffectsFirstLoad}
+        transition={transtionEffects}
+      >
+        <div className="mx-20 bg-slate-100 shadow-lg shadow-slate-400 rounded-lg flex flex-col items-center justify-center gap-5">
+          <p
+            style={{ fontFamily: "'Roboto Slab', serif" }}
+            className="my-4 text-3xl font-semibold text-orange-700 hover:text-orange-600 text-center"
+          >
+            Choose the template
+          </p>
+          <Link href="/builder" passHref={true}>
+            <Button variant="contained" className="bg-sky-800 hover:bg-orange-800">
+              BUILD YOUR RESUME
+            </Button>
+          </Link>
+          <TemplateSlider />
+        </div>
+      </motion.div>
+      {/* <motion.div
         className="mx-6 md:mx-40 xl:mx-60 my-32 w-75"
         style={{ fontFamily: "'Roboto Slab', serif" }}
         initial={{ opacity: 0 }}
@@ -101,7 +127,7 @@ const HomeLayout = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
           <FeatureSection />
         </div>
-      </motion.div>
+      </motion.div> */}
 
       <div className="bg-cyan-500 my-32"></div>
     </motion.div>

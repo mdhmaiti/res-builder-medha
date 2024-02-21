@@ -13,7 +13,7 @@ export const ThemeSelect = () => {
   };
 
   return (
-    <div className={`h-[auto] w-[475px]  flex flex-col px-9 py-7 border:none`}>
+    <div className={`h-[auto] w-[auto]  flex flex-col py-7 border:none`}>
       {/* <span className="text-resume-800 font-bold text-lg mb-2">Choose a resume colour scheme</span> */}
       <div className="w-full flex flex-row justify-evenly border:none">
         {SYSTEM_COLORS.map((themeObject) => {
@@ -22,7 +22,7 @@ export const ThemeSelect = () => {
             // <div></div>
             <div
               key={themeObject.id}
-              className={`w-6 h-6 flex  justify-evenly items-center py-[14px] px-4 hover:cursor-pointer border:none`}
+              className={`w-5 h-5 flex mx-2 justify-evenly items-center py-[14px] px-3 hover:cursor-pointer border:none`}
               onClick={() => handleActiveTheme(themeObject)}
             >
               <ColorBoxWrapper>
@@ -31,9 +31,9 @@ export const ThemeSelect = () => {
                 <ColorBox bgColor={themeObject.titleColor} />
                 {/* <ColorBox bgColor={themeObject.highlighterColor} /> */}
               </ColorBoxWrapper>
-              {isActive && (
+              {/* {isActive && (
                 <Image src={'/icons/selected-tick.svg'} alt="logo" width="28" height="20" />
-              )}
+              )} */}
             </div>
           );
         })}
