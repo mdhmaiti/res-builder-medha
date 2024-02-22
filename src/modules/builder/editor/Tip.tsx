@@ -18,7 +18,7 @@ const Tip = ({
   //Make sure links are properly working and redirect to idented page.
   return (
     <div className=" w-60  h-fit  text-center  print:hidden">
-      <div className="w-full border-t-[5px] flex flex-col gap-2 rounded-lg p-4 shadow-lg shadow-slate-600 bg-orange-200">
+      <div className="w-full flex flex-col gap-2 rounded-lg p-4 shadow-lg shadow-slate-600 bg-orange-200">
         <div className="flex items-center ">
           {' '}
           <div className="flex-initial w-10 h-full">

@@ -7,7 +7,7 @@ import { ResumeLayout } from './resume/ResumeLayout';
 import Tooltip from '@mui/material/Tooltip';
 import Counter from './editor/ProgressbarCount';
 import Button from '@mui/material/Button';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Tip from './editor/Tip';
 import {
   useTipAchievements,
@@ -23,12 +23,71 @@ const BuilderLayout = () => {
   const toggleEditorRight = () => {
     setShowEditorRight(!showEditorRight); // Toggle the state variable
   };
-  const { isTipVisible1 } = useTipPersonal();
-  const { isTipVisible2 } = useTipSkillExp();
-  const { isTipVisible3 } = useTipEducation();
-  const { isTipVisible4 } = useTipExperience();
-  const { isTipVisible5 } = useTipAchievements();
-  const { isTipVisible6 } = useTipProjects();
+  const { isTipVisible1, hideTip1 } = useTipPersonal();
+  const { isTipVisible2, hideTip2 } = useTipSkillExp();
+  const { isTipVisible3, hideTip3 } = useTipEducation();
+  const { isTipVisible4, hideTip4 } = useTipExperience();
+  const { isTipVisible5, hideTip5 } = useTipAchievements();
+  const { isTipVisible6, hideTip6 } = useTipProjects();
+
+  // tis use state is for the tip rendering one at a time
+  useEffect(() => {
+    if (isTipVisible1) {
+      hideTip2();
+      hideTip3();
+      hideTip4();
+      hideTip5();
+      hideTip6();
+    }
+    if (isTipVisible2) {
+      hideTip3();
+      hideTip4();
+      hideTip5();
+      hideTip6();
+      hideTip1();
+    }
+    if (isTipVisible3) {
+      hideTip2();
+      hideTip4();
+      hideTip5();
+      hideTip6();
+      hideTip1();
+    }
+    if (isTipVisible4) {
+      hideTip2();
+      hideTip3();
+      hideTip5();
+      hideTip6();
+      hideTip1();
+    }
+    if (isTipVisible5) {
+      hideTip2();
+      hideTip3();
+      hideTip4();
+      hideTip6();
+      hideTip1();
+    }
+    if (isTipVisible6) {
+      hideTip2();
+      hideTip3();
+      hideTip4();
+      hideTip5();
+      hideTip1();
+    }
+  }, [
+    hideTip1,
+    hideTip2,
+    hideTip3,
+    hideTip4,
+    hideTip5,
+    hideTip6,
+    isTipVisible1,
+    isTipVisible2,
+    isTipVisible3,
+    isTipVisible4,
+    isTipVisible5,
+    isTipVisible6,
+  ]);
   return (
     <div className="flex flex-col h-screen">
       <NavBarLayout />

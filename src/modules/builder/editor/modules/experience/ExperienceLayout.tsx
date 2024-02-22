@@ -33,7 +33,7 @@ const ExperienceLayout = () => {
       decreaseCounter(); // Decrease counter if unchecked
     }
   };
-  const { isTipVisible4, showTip, hideTip } = useTipExperience();
+  const { isTipVisible4, showTip4, hideTip4 } = useTipExperience();
   return (
     <div className="flex flex-col gap-8 mb-8">
       {/* <div className="flex flex-row  items-center gap-2">
@@ -41,7 +41,7 @@ const ExperienceLayout = () => {
         <Checkbox onChange={handleCounterChange} checked={useCounter.getState().counter > 3} />
         <span className="text-slate-100 text-xl font-bold"> check if complete</span>
       </div> */}
-      <Button variant="contained" onClick={isTipVisible4 ? hideTip : showTip}>
+      <Button variant="contained" onClick={isTipVisible4 ? hideTip4 : showTip4}>
         {isTipVisible4 ? 'Hide Tip' : 'Show Tip'}
       </Button>
       {allWorks.map((work, index) => (
