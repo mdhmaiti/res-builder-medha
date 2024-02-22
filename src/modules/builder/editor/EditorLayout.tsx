@@ -31,7 +31,7 @@ const EditorLayout = () => {
   );
 
   return (
-    <div className="h-full p-1 overflow-auto relative no-scrollbar shadow-level-4dp bg-cyan-700 text-xs">
+    <div className="h-full p-1 overflow-auto relative no-scrollbar shadow-level-4dp bg-orange-500 text-xs">
       {/* Button to toggle visibility of the Tip */}
 
       {/* Display the Tip component if showTip is true */}

@@ -23,7 +23,7 @@ const EditorLayoutRight = () => {
       {/* {displayElement} */}
       {/* <div className="mt-8 text-white p-3 m-2"> <OutlinedButton onClick={resetResumeStore}>Reset all edits</OutlinedButton> </div> */}{' '}
       {/* <TemplateSelect /> */}
-      <Tip />
+      <Tip title={''} desc1={''} desc2={''} desc3={''} />
     </div>
   );
 };

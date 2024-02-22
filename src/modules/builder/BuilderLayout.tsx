@@ -42,13 +42,13 @@ const BuilderLayout = () => {
         </div> */}
         {/* another solution */}
         <div className="bg-custom-grey100 flex flex-col justify-center ">
-          <div className="flex flex-col max-h-96 overflow-hidden hover:overflow-auto mx-2 shadow-md shadow-slate-500 gap-3">
+          <div className="flex flex-col max-h-96 overflow-hidden hover:overflow-auto mx-2 shadow-md shadow-slate-500 gap-3 print:hidden">
             {isTipVisible6 && (
               <Tip
                 title={'Tips for projects'}
-                desc1={'Opt for Gmail as email provider for better result .'}
-                desc2={'Provide Mobile Number which is properly working.'}
-                desc3={'Make sure links are properly working and redirect to idented page.'}
+                desc1={'Mention the impact of your projects'}
+                desc2={'Dont forget to add all the unique features'}
+                desc3={' Whenever possible, quantify your achievements.'}
               />
             )}
 
@@ -64,33 +64,33 @@ const BuilderLayout = () => {
             {isTipVisible2 && (
               <Tip
                 title={'Tips for expertise'}
-                desc1={'Opt for Gmail as email provider for better result .'}
-                desc2={'Provide Mobile Number which is properly working.'}
-                desc3={'Make sure links are properly working and redirect to idented page.'}
+                desc1={'Highlight the skills that are most relevant to the position of the job description.'}
+                desc2={'Organize your skills into relevant categories.'}
+                desc3={'Limit the number of skills listed to the most relevant and impactful ones.'}
               />
             )}
             {isTipVisible3 && (
               <Tip
                 title={'Tips for education'}
-                desc1={'Opt for Gmail as email provider for better result .'}
-                desc2={'Provide Mobile Number which is properly working.'}
-                desc3={'Make sure links are properly working and redirect to idented page.'}
+                desc1={'Include the dates of attendance for each degree.'}
+                desc2={'Make sure all the information provided in the education section is accurate.'}
+                desc3={'Be concise and to the point in your education section.'}
               />
             )}
             {isTipVisible4 && (
               <Tip
                 title={'Tips for experience'}
-                desc1={'Opt for Gmail as email provider for better result .'}
-                desc2={'Provide Mobile Number which is properly working.'}
-                desc3={'Make sure links are properly working and redirect to idented page.'}
+                desc1={'Whenever possible, quantify your accomplishments with numbers.'}
+                desc2={'Customize your experience section to emphasize the skills and accomplishments.'}
+                desc3={'Start each bullet point with a strong action verb.'}
               />
             )}
             {isTipVisible5 && (
               <Tip
                 title={'Tips for achievements'}
-                desc1={'Opt for Gmail as email provider for better result .'}
-                desc2={'Provide Mobile Number which is properly working.'}
-                desc3={'Make sure links are properly working and redirect to idented page.'}
+                desc1={'Focus on achievements that are relevant to the job.'}
+                desc2={'Place greater emphasis on your most recent achievements.'}
+                desc3={'Ensure that your achievements are truthful.'}
               />
             )}
           </div>

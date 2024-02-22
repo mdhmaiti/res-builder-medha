@@ -70,7 +70,7 @@ const ProgressbarCount: React.FC = () => {
         <span>{currentIcon}</span>
         <LinearProgress
           className="p-4 rounded-full w-full max-w-4xl"
-          color="secondary"
+          color="warning"
           variant="determinate"
           value={progress}
         />
