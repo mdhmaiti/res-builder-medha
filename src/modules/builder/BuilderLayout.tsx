@@ -23,16 +23,17 @@ const BuilderLayout = () => {
   const toggleEditorRight = () => {
     setShowEditorRight(!showEditorRight); // Toggle the state variable
   };
-  const { isTipVisible1, hideTip1 } = useTipPersonal();
-  const { isTipVisible2, hideTip2 } = useTipSkillExp();
-  const { isTipVisible3, hideTip3 } = useTipEducation();
-  const { isTipVisible4, hideTip4 } = useTipExperience();
-  const { isTipVisible5, hideTip5 } = useTipAchievements();
-  const { isTipVisible6, hideTip6 } = useTipProjects();
+  const { isTipVisible1, hideTip1, showTip1 } = useTipPersonal();
+  const { isTipVisible2, hideTip2, showTip2 } = useTipSkillExp();
+  const { isTipVisible3, hideTip3, showTip3 } = useTipEducation();
+  const { isTipVisible4, hideTip4, showTip4 } = useTipExperience();
+  const { isTipVisible5, hideTip5, showTip5 } = useTipAchievements();
+  const { isTipVisible6, hideTip6, showTip6 } = useTipProjects();
 
   // tis use state is for the tip rendering one at a time
   useEffect(() => {
     if (isTipVisible1) {
+      showTip1();
       hideTip2();
       hideTip3();
       hideTip4();
@@ -40,6 +41,7 @@ const BuilderLayout = () => {
       hideTip6();
     }
     if (isTipVisible2) {
+      showTip2();
       hideTip3();
       hideTip4();
       hideTip5();
@@ -47,6 +49,7 @@ const BuilderLayout = () => {
       hideTip1();
     }
     if (isTipVisible3) {
+      showTip3();
       hideTip2();
       hideTip4();
       hideTip5();
@@ -54,6 +57,8 @@ const BuilderLayout = () => {
       hideTip1();
     }
     if (isTipVisible4) {
+      showTip4();
+      hideTip2();
       hideTip2();
       hideTip3();
       hideTip5();
@@ -61,6 +66,8 @@ const BuilderLayout = () => {
       hideTip1();
     }
     if (isTipVisible5) {
+      showTip5();
+      hideTip2();
       hideTip2();
       hideTip3();
       hideTip4();
@@ -68,6 +75,8 @@ const BuilderLayout = () => {
       hideTip1();
     }
     if (isTipVisible6) {
+      showTip6();
+      hideTip2();
       hideTip2();
       hideTip3();
       hideTip4();
@@ -87,6 +96,12 @@ const BuilderLayout = () => {
     isTipVisible4,
     isTipVisible5,
     isTipVisible6,
+    showTip1,
+    showTip2,
+    showTip3,
+    showTip4,
+    showTip5,
+    showTip6,
   ]);
   return (
     <div className="flex flex-col h-screen">
