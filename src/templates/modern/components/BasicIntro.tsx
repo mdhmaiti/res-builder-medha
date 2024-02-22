@@ -36,10 +36,10 @@ export const BasicIntro = ({
   linkedin: string;
   twitter: string;
   github: string;
-  hackerrank: string;
-  hackerearth: string;
-  codechef: string;
-  leetcode: string;
+  hackerrank?: string;
+  hackerearth?: string;
+  codechef?: string;
+  leetcode?: string;
 }) => {
   return (
     <div className="flex justify-between items-center p-2">

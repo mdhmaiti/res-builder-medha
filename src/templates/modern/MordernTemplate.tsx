@@ -28,10 +28,10 @@ export default function MordernTemplate() {
         linkedin={resumeData.basics.profiles[0].url}
         twitter={resumeData.basics.profiles[1].url}
         github={resumeData.basics.profiles[2].url}
-        hackerrank={resumeData.basics.profiles[3].url}
-        hackerearth={resumeData.basics.profiles[4].url}
-        codechef={resumeData.basics.profiles[5].url}
-        leetcode={resumeData.basics.profiles[6].url}
+        // hackerrank={resumeData.basics.profiles[3].url}
+        // hackerearth={resumeData.basics.profiles[4].url}
+        // codechef={resumeData.basics.profiles[5].url}
+        // leetcode={resumeData.basics.profiles[6].url}
       />
 
       <div className="flex h-full w-full gap-1">
