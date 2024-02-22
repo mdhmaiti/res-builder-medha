@@ -28,6 +28,7 @@ import { useEducations } from 'src/stores/education';
 import { useExperiences } from 'src/stores/experience';
 import { useVoluteeringStore } from 'src/stores/volunteering';
 import { ExportAsDocx } from './components/ExportAsDocx';
+import { useCounter } from 'src/stores/useCounter';
 
 const TOTAL_TEMPLATES_AVAILABLE = Object.keys(AVAILABLE_TEMPLATES).length;
 
@@ -122,6 +123,11 @@ const NavBarLayout = () => {
       }
     };
   }, []);
+  // grabbing the global state
+  const { counter } = useCounter();
+  const handleIncompleteButtonClick = () => {
+    alert('Please complete the progress first.');
+  };
 
   return (
     <nav className="h-full w-full  #ffffff relative flex py-2.5 pl-5 pr-4 items-center shadow-level-8dp z-20 print:hidden">
@@ -172,8 +178,30 @@ const NavBarLayout = () => {
           <NavMenuItem caption="choose a colour" popoverChildren={<ThemeSelect />} /> */}
 
           <ThemeSelect />
-          <PrintResume />
-          <ExportAsDocx />
+          {/* checks for progress */}
+          {counter < 6 ? (
+            <StyledButton
+              className=" bg-orange-700"
+              variant="text"
+              onClick={handleIncompleteButtonClick}
+            >
+              Download
+            </StyledButton>
+          ) : (
+            <PrintResume />
+          )}
+
+          {counter < 6 ? (
+            <StyledButton
+              className=" bg-orange-700"
+              variant="text"
+              onClick={handleIncompleteButtonClick}
+            >
+              Export as docx
+            </StyledButton>
+          ) : (
+            <ExportAsDocx />
+          )}
         </div>
       </div>
       <Toast

@@ -64,7 +64,9 @@ const BuilderLayout = () => {
             {isTipVisible2 && (
               <Tip
                 title={'Tips for expertise'}
-                desc1={'Highlight the skills that are most relevant to the position of the job description.'}
+                desc1={
+                  'Highlight the skills that are most relevant to the position of the job description.'
+                }
                 desc2={'Organize your skills into relevant categories.'}
                 desc3={'Limit the number of skills listed to the most relevant and impactful ones.'}
               />
@@ -73,7 +75,9 @@ const BuilderLayout = () => {
               <Tip
                 title={'Tips for education'}
                 desc1={'Include the dates of attendance for each degree.'}
-                desc2={'Make sure all the information provided in the education section is accurate.'}
+                desc2={
+                  'Make sure all the information provided in the education section is accurate.'
+                }
                 desc3={'Be concise and to the point in your education section.'}
               />
             )}
@@ -81,7 +85,9 @@ const BuilderLayout = () => {
               <Tip
                 title={'Tips for experience'}
                 desc1={'Whenever possible, quantify your accomplishments with numbers.'}
-                desc2={'Customize your experience section to emphasize the skills and accomplishments.'}
+                desc2={
+                  'Customize your experience section to emphasize the skills and accomplishments.'
+                }
                 desc3={'Start each bullet point with a strong action verb.'}
               />
             )}

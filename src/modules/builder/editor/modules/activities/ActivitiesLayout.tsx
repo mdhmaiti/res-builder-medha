@@ -57,7 +57,7 @@ const ActivitiesLayout = () => {
         <Checkbox onChange={handleCounterChange} checked={useCounter.getState().counter > 4} />
         <span className="text-slate-100 text-xl font-bold"> check if complete</span>
       </div> */}
-      <Button variant="contained" onClick={isTipVisible5 ? hideTip : showTip} className='w-full'>
+      <Button variant="contained" onClick={isTipVisible5 ? hideTip : showTip} className="w-full">
         {isTipVisible5 ? 'Hide Tip' : 'Show Tip'}
       </Button>
       <BasicHeader
