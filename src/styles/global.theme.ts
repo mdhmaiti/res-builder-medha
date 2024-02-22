@@ -17,6 +17,7 @@ export const GLOBAL_MUI_THEME = createTheme({
     primary: {
       main: '#2E4052',
     },
+    secondary: { main: '#0e7490' },
   },
   components: {
     MuiSwitch: {
@@ -42,7 +43,7 @@ export const GLOBAL_MUI_THEME = createTheme({
 
 declare module '@mui/material/styles' {
   interface Palette {
-    resume: Palette['grey'];
+    resume: Palette['primary']; //grey to primary
   }
 
   // allow configuration using `createTheme`

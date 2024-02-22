@@ -63,9 +63,9 @@ export const TemplateSlider = () => {
           }
         }
       />
-      <section className="splide " ref={targetElementRef}>
-        <div className="splide__track ">
-          <ul className="splide__list flex flex-col items-center">
+      <section className="splide  flex flex-row gap-10" ref={targetElementRef}>
+        <div className="splide__track p-10  ">
+          <ul className="splide__list ">
             {Object.keys(AVAILABLE_TEMPLATES).map((templateKey) => {
               const template = AVAILABLE_TEMPLATES[templateKey];
               const isActive = template.id === templateIndex;
@@ -102,10 +102,12 @@ export const TemplateSlide = ({
   onChangeTemplate: (id: string) => void;
 }) => {
   return (
-    <li className="splide__slide flex items-center">
+    <li className="splide__slide p-5  l">
       <div
-        className={`h-[20rem] w-[14.5rem] rounded border hover:cursor-pointer overflow-hidden relative ${
-          isActive ? 'border-resume-800' : 'border-resume-200'
+        className={`h-[20rem] w-[14.5rem] rounded shadow-md  shadow-slate-500  hover:cursor-pointer overflow-hidden relative ${
+          isActive
+            ? 'scale-110 shadow-sky-800 ease-in-out duration-500'
+            : 'ease-in-out duration-500'
         }`}
         onClick={() => {
           onChangeTemplate(id);

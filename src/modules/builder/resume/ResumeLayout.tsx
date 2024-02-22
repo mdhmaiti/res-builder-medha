@@ -6,6 +6,7 @@ import { useResumeStore } from 'src/stores/useResumeStore';
 import { useTemplates } from 'src/stores/useTemplate';
 import { useThemes } from 'src/stores/themes';
 import { useZoom } from 'src/stores/useZoom';
+import ProgressbarCount from '../editor/ProgressbarCount';
 
 // TODO: need to define types
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -27,12 +28,15 @@ export const ResumeLayout = () => {
   }, []);
 
   return (
-    <div className="mx-5 print:mx-0 mb-2 print:mb-0" id="source-html">
+    <div className="mx-5 mb-2" id="source-html">
       <div
         style={{ transform: `scale(${zoom})` }}
-        className="origin-top transition-all duration-300 ease-linear	print:!scale-100"
+        className="origin-top transition-all flex flex-col items-center duration-300 ease-linear"
       >
-        <div className="w-[210mm] h-[296mm] bg-white my-0 mx-auto">
+        <div className="mb-5 w-[210mm] print:hidden">
+          <ProgressbarCount />
+        </div>
+        <div className="w-[210mm] h-[296mm] bg-white my-0 mx-auto print:mx-0 print:my-0 print:overflow-hidden">
           <StateContext.Provider value={resumeData}>
             <ThemeProvider theme={selectedTheme}>
               <Template />

@@ -116,7 +116,7 @@ const Links = ({
           onURLChange(event.target.value, SUPPORTED_NETWORKS.github);
         }}
       />
-      <TextField
+      {/* <TextField
         label="Hackerrank"
         variant="filled"
         value={networks[SUPPORTED_NETWORKS.hackerrank].url}
@@ -147,7 +147,7 @@ const Links = ({
         onChange={(event: ChangeEvent<HTMLInputElement>) => {
           onURLChange(event.target.value, SUPPORTED_NETWORKS.leetcode);
         }}
-      />
+      /> */}
     </Fragment>
   );
 };

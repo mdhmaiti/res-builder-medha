@@ -71,7 +71,6 @@ export default function ProfessionalTemplate() {
           </Section>
         </SectionValidator>
       </LeftSection>
-
       <RightSection>
         <SectionValidator value={resumeData.basics.summary}>
           <Section title="Summary">

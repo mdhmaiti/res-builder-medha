@@ -32,69 +32,107 @@
         "network": "github",
         "username": "username",
         "url": "https://github.com/username/"
-      },
-      {
-        "network": "hackerrank",
-        "username": "username",
-        "url": "https://www.hackerrank.com/username/"
-      },
-      {
-        "network": "hackerearth",
-        "username": "username",
-        "url": "https://www.hackerearth.com/username/"
-      },
-      {
-        "network": "codechef",
-        "username": "username",
-        "url": "https://www.codechef.com/username/"
-      },
-      {
-        "network": "leetcode",
-        "username": "username",
-        "url": "https://leetcode.com/username/"
       }
     ]
   },
-
   "skills": {
-    "skill":[
-      { "name": "Public speaking", "level": 3 },
-      { "name": "Photoshop", "level": 3 }
+    "skill": [
+      {
+        "name": "Public speaking",
+        "level": 3
+      },
+      {
+        "name": "Photoshop",
+        "level": 3
+      }
     ],
     "languages": [
-      { "name": "HTML5", "level": 80 },
-      { "name": "CSS", "level": 90 },
-      { "name": "JavaScript", "level": 90 },
-      { "name": "Java", "level": 80 }
+      {
+        "name": "HTML5",
+        "level": 80
+      },
+      {
+        "name": "CSS",
+        "level": 90
+      },
+      {
+        "name": "JavaScript",
+        "level": 90
+      },
+      {
+        "name": "Java",
+        "level": 80
+      }
     ],
     "frameworks": [
-      { "name": "React", "level": 70 },
-      { "name": "Angular", "level": 70 },
-      { "name": "Vue", "level": 70 }
+      {
+        "name": "React",
+        "level": 70
+      },
+      {
+        "name": "Angular",
+        "level": 70
+      },
+      {
+        "name": "Vue",
+        "level": 70
+      }
     ],
     "technologies": [
-      { "name": "Progressive Web Apps", "level": 3 }
+      {
+        "name": "Progressive Web Apps",
+        "level": 3
+      }
     ],
     "libraries": [
-      { "name": "jQuery", "level": 3 },
-      { "name": "Redux", "level": 3 }
+      {
+        "name": "jQuery",
+        "level": 3
+      },
+      {
+        "name": "Redux",
+        "level": 3
+      }
     ],
     "databases": [
-      { "name": "Firebase", "level": 3 }, 
-      { "name": "SQL", "level": 3 },
-      { "name": "Mongoose", "level": 3 }
+      {
+        "name": "Firebase",
+        "level": 3
+      },
+      {
+        "name": "SQL",
+        "level": 3
+      },
+      {
+        "name": "Mongoose",
+        "level": 3
+      }
     ],
     "practices": [
-      { "name": "Agile methodology", "level": 3 },
-      { "name": "Design Patterns", "level": 3 }
+      {
+        "name": "Agile methodology",
+        "level": 3
+      },
+      {
+        "name": "Design Patterns",
+        "level": 3
+      }
     ],
     "tools": [
-      { "name": "Git", "level": 3 },
-      { "name": "VS Code", "level": 3 },
-      { "name": "GitHub", "level": 3 }
+      {
+        "name": "Git",
+        "level": 3
+      },
+      {
+        "name": "VS Code",
+        "level": 3
+      },
+      {
+        "name": "GitHub",
+        "level": 3
+      }
     ]
   },
-
   "work": [
     {
       "id": "1",
@@ -139,7 +177,6 @@
       "years": "<x> years"
     }
   ],
-
   "projects": [
     {
       "id": "1",
@@ -160,7 +197,6 @@
       "summary": "<ul><li> I am a professional who designs, builds, and maintains websites or web applications. I take the sole responsibility for transforming the client's vision into a functional and engaging digital product.</li><li>mention more about the contribution</li><li> Mention about the impact you created</li></ul>"
     }
   ],
-
   "education": [
     {
       "id": "1",
@@ -187,13 +223,10 @@
       "courses": []
     }
   ],
-
   "activities": {
     "involvements": "<ul><li> I am a professional who designs, builds, and maintains websites or web applications. I take the sole responsibility for transforming the client's vision into a functional and engaging digital product.</li><li>mention more about the contribution</li><li> Mention about the impact you created</li></ul>",
-
     "achievements": "<ul><li> Led a team in implementing a responsive design strategy, improving mobile conversion rates by 35% and decreasing bounce rates by 20% across all devices.</li><li>Successfully migrated legacy systems to modern cloud infrastructure, reducing hosting costs by 30% and improving system uptime to 99.9%. </li></ul>"
   },
-
   "volunteer": [
     {
       "id": "1",
@@ -203,7 +236,9 @@
       "startDate": "2012-01-01",
       "endDate": "2013-01-01",
       "summary": "<ul><li>was developing a project based on optimizing the user interface and experience of an e-commerce website. </li><li>Implemented responsive design principles and enhanced navigation to improve user engagement and increase conversion rates.</li><li>Resulted in a 30% increase in online sales and positive feedback from users.</li></ul>",
-      "highlights": ["I have been awarded with <award> for my contribution"],
+      "highlights": [
+        "I have been awarded with <award> for my contribution"
+      ],
       "isVolunteeringNow": false
     },
     {
@@ -214,7 +249,9 @@
       "startDate": "2012-01-01",
       "endDate": "2013-01-01",
       "summary": "<ul><li>Spearheaded the implementation of a custom content management system (CMS).</li><li>Integrated third-party APIs for social media sharing and analytics tracking.</li><li>The project resulted in streamlined content management processes and increased productivity for the client's editorial team.</li></ul>",
-      "highlights": ["I have been awarded with <award> for my contribution"],
+      "highlights": [
+        "I have been awarded with <award> for my contribution"
+      ],
       "isVolunteeringNow": true
     }
   ],
