@@ -33,14 +33,9 @@ interface TipState {
 export const useTipPersonal = create((set: SetState<TipState>) => ({
   isTipVisible1: false,
   showTip1: () =>
-    set((state) => ({
-      ...state, // Keep other tip visibilities as they are
+    set(() => ({
+      // Keep other tip visibilities as they are
       isTipVisible1: true, // Set the current tip visibility to true
-      isTipVisible2: false, // Set all other tips to false
-      isTipVisible3: false,
-      isTipVisible4: false,
-      isTipVisible5: false,
-      isTipVisible6: false,
     })),
   hideTip1: () => set({ isTipVisible1: false }),
 }));
