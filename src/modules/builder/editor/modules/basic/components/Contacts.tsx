@@ -1,4 +1,4 @@
-import React, { ChangeEvent, Fragment } from 'react';
+import React, { ChangeEvent, Fragment, useEffect, useState } from 'react';
 import TextField from '@mui/material/TextField';
 
 const Contacts = ({
@@ -8,6 +8,20 @@ const Contacts = ({
   basicTabs: any;
   onChangeHandler: (value: any, key: string) => void;
 }) => {
+  const [characterCounts, setCharacterCounts] = useState<any>({});
+
+  const handleInputChange = (
+    event: ChangeEvent<HTMLInputElement>,
+    key: string,
+    maxLength: number
+  ) => {
+    const value = event.target.value;
+    if (value.length <= maxLength) {
+      onChangeHandler(value, key);
+      setCharacterCounts({ ...characterCounts, [key]: value.length });
+    }
+  };
+
   return (
     <Fragment>
       <TextField
@@ -18,6 +32,7 @@ const Contacts = ({
           onChangeHandler(event.target.value, 'name');
         }}
       />
+
       {/* <TextField
         label="Image URL"
         variant="filled"
@@ -50,14 +65,31 @@ const Contacts = ({
           onChangeHandler(event.target.value, 'url');
         }}
       />
-      <TextField
+      {/* <TextField
         label="Phone"
         variant="filled"
         value={basicTabs.phone}
         onChange={(event: ChangeEvent<HTMLInputElement>) => {
           onChangeHandler(event.target.value, 'phone');
         }}
+      /> */}
+
+      <TextField
+        label="Phone"
+        variant="filled"
+        value={basicTabs.phone}
+        onChange={(event: ChangeEvent<HTMLInputElement>) => {
+          handleInputChange(event, 'phone', 10);
+        }}
+        InputProps={{
+          endAdornment: (
+            <div style={{ color: 'gray', fontSize: '0.75rem' }}>
+              {characterCounts['phone'] ?? 0}/{10}
+            </div>
+          ),
+        }}
       />
+
       <TextField
         label="Location"
         variant="filled"

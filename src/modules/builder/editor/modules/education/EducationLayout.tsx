@@ -34,7 +34,7 @@ const EducationLayout = () => {
   };
   const { isTipVisible3, showTip, hideTip } = useTipEducation();
   return (
-    <div className="flex flex-col gap-8 mb-8">
+    <div className="flex flex-col gap-8 mb-8  ">
       {/* <div className="flex flex-row  items-center gap-2">
         {' '}
         <Checkbox onChange={handleCounterChange} checked={useCounter.getState().counter > 2} />
@@ -43,7 +43,6 @@ const EducationLayout = () => {
       <Button variant="contained" onClick={isTipVisible3 ? hideTip : showTip}>
         {isTipVisible3 ? 'Hide Tip' : 'Show Tip'}
       </Button>
-
       {allAcademics.map((education, index) => (
         <MoveEditSection
           key={education.id}
@@ -59,6 +58,7 @@ const EducationLayout = () => {
           <Education educationInfo={education} currentIndex={index} />
         </MoveEditSection>
       ))}
+
       <AddEducation handleChange={handleChange} isEmpty={allAcademics.length === 0} />
       <div className="flex flex-row mt-3 items-center gap-2">
         {' '}

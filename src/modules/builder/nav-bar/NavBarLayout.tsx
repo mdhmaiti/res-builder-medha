@@ -29,6 +29,7 @@ import { useExperiences } from 'src/stores/experience';
 import { useVoluteeringStore } from 'src/stores/volunteering';
 import { ExportAsDocx } from './components/ExportAsDocx';
 import { useCounter } from 'src/stores/useCounter';
+import DownloadAsWord from './components/DownloadAsWord';
 
 const TOTAL_TEMPLATES_AVAILABLE = Object.keys(AVAILABLE_TEMPLATES).length;
 
@@ -200,7 +201,8 @@ const NavBarLayout = () => {
               Export as docx
             </StyledButton>
           ) : (
-            <ExportAsDocx />
+            // <ExportAsDocx />
+            <DownloadAsWord />
           )}
         </div>
       </div>

@@ -41,7 +41,7 @@ const SkillsLayout = () => {
   };
   const { isTipVisible2, showTip, hideTip } = useTipSkillExp();
   return (
-    <div className="flex flex-col gap-8 mb-8">
+    <div className="flex flex-col gap-8 mb-8 ">
       {/* <div className="flex flex-row  items-center gap-2">
         {' '}
         <Checkbox onChange={handleCounterChange} checked={useCounter.getState().counter > 1} />

@@ -64,12 +64,12 @@ const ProgressbarCount: React.FC = () => {
   return (
     <div className="relative">
       <span className="pl-10 absolute inset-0 flex justify-center z-10">
-        <span className="text-slate-100 text-lg font-medium">{progress.toFixed(0)}%</span>
+        <span className="text-slate-100 text-md font-medium">{progress.toFixed(0)}%</span>
       </span>
       <div className="flex gap-1 items-center">
         <span>{currentIcon}</span>
         <LinearProgress
-          className="p-4 rounded-full w-full max-w-4xl"
+          className="p-2 rounded-full w-full max-w-4xl"
           color="warning"
           variant="determinate"
           value={progress}

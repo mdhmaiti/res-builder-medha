@@ -26,7 +26,7 @@ export default function Skill({
   return (
     <>
       <motion.div
-        className="flex flex-col gap-2 mb-8 empty:mb-0"
+        className="flex flex-col gap-2 mb-8 empty:mb-0 "
         initial={animation.initial}
         animate={animation.animate}
       >

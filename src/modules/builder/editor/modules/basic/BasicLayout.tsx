@@ -37,7 +37,7 @@ const BasicLayout = () => {
         />
         <span className="text-slate-100 text-xl font-bold"> check if complete</span>
       </div> */}
-      <Button variant="contained" onClick={isTipVisible1 ? hideTip : showTip} className='w-full'>
+      <Button variant="contained" onClick={isTipVisible1 ? hideTip : showTip} className="w-full">
         {isTipVisible1 ? 'Hide Tip' : 'Show Tip'}
       </Button>
       <BasicHeader
