@@ -36,7 +36,7 @@ export const ResumeLayout = () => {
         <div className="mb-5 w-[210mm] print:hidden">
           <ProgressbarCount />
         </div>
-        <div className="w-[210mm] h-[296mm] bg-white my-0 mx-auto print:mx-0 print:my-0 print:overflow-hidden">
+        <div className="w-[210mm] h-[296mm] bg-white my-0 mx-auto print:mx-0 print:my-0 print:overflow-hidden overflow-hidden">
           <StateContext.Provider value={resumeData}>
             <ThemeProvider theme={selectedTheme}>
               <Template />

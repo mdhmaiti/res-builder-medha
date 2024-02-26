@@ -34,8 +34,8 @@ export default function MordernTemplate() {
         // leetcode={resumeData.basics.profiles[6].url}
       />
 
-      <div className="flex h-full w-full gap-1">
-        <div className="basis-[60%] p-3">
+      <div className="flex h-full w-full gap-1 overflow-hidden ">
+        <div className="basis-[60%] p-3 max-w-1/2 overflow-hidden">
           <SectionValidator value={resumeData.basics.summary}>
             <SummarySection summary={resumeData.basics.summary} />
           </SectionValidator>
