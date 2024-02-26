@@ -39,97 +39,97 @@
       "skill": [
         {
           "name": "",
-          "level": 3
+          "level": null
         },
         {
           "name": "",
-          "level": 3
+          "level": null
         }
       ],
       "languages": [
         {
           "name": "",
-          "level": 80
+          "level": null
         },
         {
           "name": "",
-          "level": 90
+          "level": null
         },
         {
           "name": "",
-          "level": 90
+          "level": null
         },
         {
           "name": "",
-          "level": 80
+          "level": null
         }
       ],
       "frameworks": [
         {
           "name": "",
-          "level": 70
+          "level": null
         },
         {
           "name": "",
-          "level": 70
+          "level": null
         },
         {
           "name": "",
-          "level": 70
+          "level": null
         }
       ],
       "technologies": [
         {
           "name": "",
-          "level": 3
+          "level": null
         }
       ],
       "libraries": [
         {
           "name": "",
-          "level": 3
+          "level": null
         },
         {
           "name": "",
-          "level": 3
+          "level": null
         }
       ],
       "databases": [
         {
           "name": "",
-          "level": 3
+          "level": null
         },
         {
           "name": "",
-          "level": 3
+          "level": null
         },
         {
           "name": "",
-          "level": 3
+          "level": null
         }
       ],
       "practices": [
         {
           "name": "",
-          "level": 3
+          "level": null
         },
         {
           "name": "",
-          "level": 3
+          "level": null
         }
       ],
       "tools": [
         {
           "name": "",
-          "level": 3
+          "level": null
         },
         {
           "name": "",
-          "level": 3
+          "level": null
         },
         {
           "name": "",
-          "level": 3
+          "level": null
         }
       ]
     },
