@@ -139,8 +139,8 @@
         "name": "",
         "position": "",
         "url": "",
-        "startDate": "",
-        "isWorkingHere": true,
+        "startDate": null,
+        "isWorkingHere": false,
         "endDate": null,
         "highlights": [
           ""
@@ -153,9 +153,9 @@
         "name": "",
         "position": "",
         "url": "",
-        "startDate": "",
+        "startDate": null,
         "isWorkingHere": false,
-        "endDate": "",
+        "endDate": null,
         "highlights": [
           ""
         ],
@@ -167,9 +167,9 @@
         "name": "",
         "position": "",
         "url": "",
-        "startDate": "",
+        "startDate":null,
         "isWorkingHere": false,
-        "endDate": "",
+        "endDate": null,
         "highlights": [
           ""
         ],
@@ -204,9 +204,9 @@
         "url": "",
         "studyType": "",
         "area": "",
-        "startDate": "",
+        "startDate": null,
         "isStudyingHere": false,
-        "endDate": "",
+        "endDate": null,
         "score": "",
         "courses": []
       },
@@ -216,9 +216,9 @@
         "url": "",
         "studyType": "",
         "area": "",
-        "startDate": "",
+        "startDate": null,
         "isStudyingHere": false,
-        "endDate": "",
+        "endDate": null,
         "score": "",
         "courses": []
       }
@@ -233,8 +233,8 @@
         "organization": "",
         "position": "",
         "url": "",
-        "startDate": "",
-        "endDate": "",
+        "startDate": null,
+        "endDate": null,
         "summary": "",
         "highlights": [
           ""
@@ -246,13 +246,13 @@
         "organization": "",
         "position": "",
         "url": "",
-        "startDate": "",
-        "endDate": "",
+        "startDate": null,
+        "endDate": null,
         "summary": "",
         "highlights": [
           ""
         ],
-        "isVolunteeringNow": true
+        "isVolunteeringNow": false
       }
     ],
     "awards": [
