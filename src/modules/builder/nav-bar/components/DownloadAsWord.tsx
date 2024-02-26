@@ -172,23 +172,23 @@ const DownloadAsWord = () => {
                 new TextRun({
                   text: `${phone}  ${email}  ${location.city}  ${url}`,
                 }),
-                new ImageRun({
-                  data: base64Img,
-                  transformation: {
-                    height: 80,
-                    width: 80,
-                  },
-                  floating: {
-                    horizontalPosition: {
-                      align: 'right',
-                      relative: 'column',
-                    },
-                    verticalPosition: {
-                      align: 'top',
-                      relative: 'margin',
-                    },
-                  },
-                }),
+                // new ImageRun({
+                //   data: base64Img,
+                //   transformation: {
+                //     height: 80,
+                //     width: 80,
+                //   },
+                //   floating: {
+                //     horizontalPosition: {
+                //       align: 'right',
+                //       relative: 'column',
+                //     },
+                //     verticalPosition: {
+                //       align: 'top',
+                //       relative: 'margin',
+                //     },
+                //   },
+                // }),
               ],
             }),
           ],
