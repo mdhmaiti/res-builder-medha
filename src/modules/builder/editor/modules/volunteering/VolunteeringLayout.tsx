@@ -34,7 +34,7 @@ const VolunteeringLayout = () => {
       decreaseCounter(); // Decrease counter if unchecked
     }
   };
-  const { isTipVisible6, showTip, hideTip } = useTipProjects();
+  const { isTipVisible6, showTip6, hideTip6 } = useTipProjects();
 
   return (
     <div className="flex flex-col gap-8 mb-8">
@@ -43,7 +43,7 @@ const VolunteeringLayout = () => {
         <Checkbox onChange={handleCounterChange} checked={useCounter.getState().counter > 5} />
         <span className="text-slate-100 text-xl font-bold"> check if complete</span>
       </div> */}
-      <Button variant="contained" onClick={isTipVisible6 ? hideTip : showTip}>
+      <Button variant="contained" onClick={isTipVisible6 ? hideTip6 : showTip6}>
         {isTipVisible6 ? 'Hide Tip' : 'Show Tip'}
       </Button>
       {allVolunteeringExps.map((volunteeringInfo, index) => (

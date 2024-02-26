@@ -49,7 +49,7 @@ const ActivitiesLayout = () => {
       decreaseCounter(); // Decrease counter if unchecked
     }
   };
-  const { isTipVisible5, showTip, hideTip } = useTipAchievements();
+  const { isTipVisible5, showTip5, hideTip5 } = useTipAchievements();
   return (
     <Fragment>
       {/* <div className="flex flex-row  items-center gap-2">
@@ -57,7 +57,7 @@ const ActivitiesLayout = () => {
         <Checkbox onChange={handleCounterChange} checked={useCounter.getState().counter > 4} />
         <span className="text-slate-100 text-xl font-bold"> check if complete</span>
       </div> */}
-      <Button variant="contained" onClick={isTipVisible5 ? hideTip : showTip} className="w-full">
+      <Button variant="contained" onClick={isTipVisible5 ? hideTip5 : showTip5} className="w-full">
         {isTipVisible5 ? 'Hide Tip' : 'Show Tip'}
       </Button>
       <BasicHeader

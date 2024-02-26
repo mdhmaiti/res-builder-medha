@@ -18,7 +18,7 @@ const SkillPill = ({
 }: {
   index: number;
   name: string;
-  level?: number;
+  level: number | null;
   onDelete: (index: number) => void;
   showLevel: boolean;
 }) => {

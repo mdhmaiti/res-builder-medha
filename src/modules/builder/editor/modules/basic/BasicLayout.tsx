@@ -24,7 +24,7 @@ const BasicLayout = () => {
       decreaseCounter(); // Decrease counter if unchecked
     }
   };
-  const { isTipVisible1, showTip, hideTip } = useTipPersonal();
+  const { isTipVisible1, showTip1, hideTip1 } = useTipPersonal();
 
   return (
     <Fragment>
@@ -37,7 +37,7 @@ const BasicLayout = () => {
         />
         <span className="text-slate-100 text-xl font-bold"> check if complete</span>
       </div> */}
-      <Button variant="contained" onClick={isTipVisible1 ? hideTip : showTip} className="w-full">
+      <Button variant="contained" onClick={isTipVisible1 ? hideTip1 : showTip1} className="w-full">
         {isTipVisible1 ? 'Hide Tip' : 'Show Tip'}
       </Button>
       <BasicHeader

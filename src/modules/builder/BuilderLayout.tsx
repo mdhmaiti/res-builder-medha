@@ -7,7 +7,7 @@ import { ResumeLayout } from './resume/ResumeLayout';
 import Tooltip from '@mui/material/Tooltip';
 import Counter from './editor/ProgressbarCount';
 import Button from '@mui/material/Button';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Tip from './editor/Tip';
 import {
   useTipAchievements,
@@ -23,12 +23,149 @@ const BuilderLayout = () => {
   const toggleEditorRight = () => {
     setShowEditorRight(!showEditorRight); // Toggle the state variable
   };
-  const { isTipVisible1 } = useTipPersonal();
-  const { isTipVisible2 } = useTipSkillExp();
-  const { isTipVisible3 } = useTipEducation();
-  const { isTipVisible4 } = useTipExperience();
-  const { isTipVisible5 } = useTipAchievements();
-  const { isTipVisible6 } = useTipProjects();
+  const { isTipVisible1, hideTip1, showTip1 } = useTipPersonal();
+  const { isTipVisible2, hideTip2, showTip2 } = useTipSkillExp();
+  const { isTipVisible3, hideTip3, showTip3 } = useTipEducation();
+  const { isTipVisible4, hideTip4, showTip4 } = useTipExperience();
+  const { isTipVisible5, hideTip5, showTip5 } = useTipAchievements();
+  const { isTipVisible6, hideTip6, showTip6 } = useTipProjects();
+
+  // tis use state is for the tip rendering one at a time
+  useEffect(() => {
+    const unsubscribe1 = useTipPersonal.subscribe(
+      (isTipVisible1) => {
+        if (isTipVisible1) {
+          showTip1();
+          hideTip2();
+          hideTip3();
+          hideTip4();
+          hideTip5();
+          hideTip6();
+        }
+      },
+      (state) => state.isTipVisible1
+    );
+
+    const unsubscribe2 = useTipSkillExp.subscribe(
+      (isTipVisible2) => {
+        if (isTipVisible2) {
+          showTip2();
+          hideTip3();
+          hideTip4();
+          hideTip5();
+          hideTip6();
+          hideTip1();
+        }
+      },
+      (state) => state.isTipVisible2
+    );
+    // education
+    const unsubscribe3 = useTipEducation.subscribe(
+      (isTipVisible3) => {
+        if (isTipVisible3) {
+          showTip3();
+          hideTip2();
+          hideTip4();
+          hideTip5();
+          hideTip6();
+          hideTip1();
+        }
+      },
+      (state) => state.isTipVisible3
+    );
+    // experience
+
+    const unsubscribe4 = useTipExperience.subscribe(
+      (isTipVisible4) => {
+        if (isTipVisible4) {
+          showTip4();
+          hideTip2();
+          hideTip2();
+          hideTip3();
+          hideTip5();
+          hideTip6();
+          hideTip1();
+        }
+      },
+      (state) => state.isTipVisible4
+    );
+    //achievements
+
+    const unsubscribe5 = useTipAchievements.subscribe(
+      (isTipVisible5) => {
+        if (isTipVisible5) {
+          showTip5();
+          hideTip2();
+          hideTip2();
+          hideTip3();
+          hideTip4();
+          hideTip6();
+          hideTip1();
+        }
+      },
+      (state) => state.isTipVisible5
+    );
+    //projects
+
+    const unsubscribe6 = useTipProjects.subscribe(
+      (isTipVisible6) => {
+        if (isTipVisible6) {
+          showTip6();
+          hideTip2();
+          hideTip2();
+          hideTip3();
+          hideTip4();
+          hideTip5();
+          hideTip1();
+        }
+      },
+      (state) => state.isTipVisible6
+    );
+
+    return () => {
+      // unsubscribe
+      unsubscribe1();
+      unsubscribe2();
+      unsubscribe3();
+      unsubscribe4();
+      unsubscribe5();
+      unsubscribe6();
+    };
+  }, [
+    hideTip1,
+    hideTip2,
+    hideTip3,
+    hideTip4,
+    hideTip5,
+    hideTip6,
+    showTip1,
+    showTip2,
+    showTip3,
+    showTip4,
+    showTip5,
+    showTip6,
+  ]);
+
+  // useEffect(() => {}, [
+  //   hideTip1,
+  //   hideTip2,
+  //   hideTip3,
+  //   hideTip4,
+  //   hideTip5,
+  //   hideTip6,
+  //   isTipVisible1,
+  //   isTipVisible2,
+  //   isTipVisible3,
+  //   isTipVisible4,
+  //   isTipVisible5,
+  //   isTipVisible6,
+  //   showTip1,
+  //   showTip2,
+  //   showTip3,
+  //   showTip4,
+  //   showTip5,
+  //   showTip6,
+  // ]);
   return (
     <div className="flex flex-col h-screen">
       <NavBarLayout />

@@ -39,15 +39,15 @@ const SkillsLayout = () => {
       decreaseCounter(); // Decrease counter if unchecked
     }
   };
-  const { isTipVisible2, showTip, hideTip } = useTipSkillExp();
+  const { isTipVisible2, showTip2, hideTip2 } = useTipSkillExp();
   return (
-    <div className="flex flex-col gap-8 mb-8 ">
+    <div className="flex flex-col gap-8 mb-8">
       {/* <div className="flex flex-row  items-center gap-2">
         {' '}
         <Checkbox onChange={handleCounterChange} checked={useCounter.getState().counter > 1} />
         <span className="text-slate-100 text-xl font-bold"> check if complete</span>
       </div> */}
-      <Button variant="contained" onClick={isTipVisible2 ? hideTip : showTip}>
+      <Button variant="contained" onClick={isTipVisible2 ? hideTip2 : showTip2}>
         {isTipVisible2 ? 'Hide Tip' : 'Show Tip'}
       </Button>
       {skillState.map((state) => (
