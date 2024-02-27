@@ -79,12 +79,12 @@ const Contacts = ({
         variant="filled"
         value={basicTabs.phone}
         onChange={(event: ChangeEvent<HTMLInputElement>) => {
-          handleInputChange(event, 'phone', 13);
+          handleInputChange(event, 'phone', 15);
         }}
         InputProps={{
           endAdornment: (
             <div style={{ color: 'gray', fontSize: '0.75rem' }}>
-              {characterCounts['phone'] ?? 0}/{13}
+              {characterCounts['phone'] ?? 0}/{15}
             </div>
           ),
         }}
