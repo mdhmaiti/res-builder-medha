@@ -6,12 +6,14 @@ interface ICounterStore {
   counter: number;
   increaseCounter: () => void;
   decreaseCounter: () => void;
+  setCounter: (value: number) => void;
 }
 
 export const useCounter = create<ICounterStore>((set) => ({
   counter: 0,
   increaseCounter: () => set((state) => ({ counter: state.counter + 1 })),
   decreaseCounter: () => set((state) => ({ counter: Math.max(0, state.counter - 1) })),
+  setCounter: (value) => set({ counter: value }),
 }));
 //education
 export const useEducationCounter = () => {

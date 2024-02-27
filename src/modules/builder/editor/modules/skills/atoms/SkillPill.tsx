@@ -18,7 +18,7 @@ const SkillPill = ({
 }: {
   index: number;
   name: string;
-  level?: number;
+  level: number | null;
   onDelete: (index: number) => void;
   showLevel: boolean;
 }) => {
@@ -39,7 +39,7 @@ const SkillPill = ({
       key={name}
     >
       <div
-        className="bg-custom-grey flex items-center pl-4 pr-2 py-2 rounded-full text-sm cursor-default"
+        className="hover:bg-custom-grey  shadow-md shadow-slate-700 bg-orange-100 flex items-center pl-4 pr-2 py-2 rounded-full text-sm cursor-default"
         data-testid="skill-pill"
         style={style}
         ref={setNodeRef}

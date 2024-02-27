@@ -37,7 +37,7 @@ const EditSectionContainer = ({
   return (
     <div className="shadow-sm rounded-lg">
       <div
-        className={`bg-resume-100 shadow-sm h-12 w-full ${
+        className={`hover:bg-resume-100 bg-orange-200 shadow-md shadow-slate-700 h-12 w-full ${
           expanded ? `rounded-t-lg` : `rounded-lg`
         } relative flex items-center justify-between px-4 text-resume-800 font-bold text-lg select-none cursor-pointer z-10`}
         onClick={clickHandler}
@@ -54,7 +54,7 @@ const EditSectionContainer = ({
       <AnimatePresence>
         {expanded && (
           <motion.div
-            className={`bg-resume-10 shadow-sm relative rounded-b-lg px-4 py-6 overflow-hidden ${
+            className={`hover:bg-resume-10 bg-orange-50 shadow-md shadow-slate-700 relative rounded-b-lg px-4 py-6 overflow-hidden ${
               !isEnabled && nonEditableStyle
             }`}
             exit={animation.exit}

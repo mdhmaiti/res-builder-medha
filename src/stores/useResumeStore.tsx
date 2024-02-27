@@ -10,6 +10,7 @@ import {
 } from 'src/stores/skills';
 
 import ResumeData from 'src/helpers/constants/resume-data.json';
+import EmptyData from 'src/helpers/constants/empty-data.json';
 import { useActivity } from './activity';
 import { useAwards } from './awards';
 import { useBasicDetails } from './basic';
@@ -42,6 +43,23 @@ export const useResumeStore = () => {
 /**
  * @description Reset all the stores
  */
+// export const resetResumeStore = () => {
+//   useBasicDetails.getState().reset(EmptyData.basics);
+//   useGeneralSkills.getState().reset(EmptyData.skills.skill);
+//   useLanguages.getState().reset(EmptyData.skills.languages);
+//   useFrameworks.getState().reset(EmptyData.skills.frameworks);
+//   useLibraries.getState().reset(EmptyData.skills.libraries);
+//   useDatabases.getState().reset(EmptyData.skills.databases);
+//   useTechnologies.getState().reset(EmptyData.skills.technologies);
+//   usePractices.getState().reset(EmptyData.skills.practices);
+//   useTools.getState().reset(EmptyData.skills.tools);
+//   useExperiences.getState().reset(EmptyData.work);
+//   useEducations.getState().reset(EmptyData.education);
+//   useVoluteeringStore.getState().reset(EmptyData.volunteer);
+//   useAwards.getState().reset(EmptyData.awards);
+//   useActivity.getState().reset(EmptyData.activities);
+// };
+// original prefilled data
 export const resetResumeStore = () => {
   useBasicDetails.getState().reset(ResumeData.basics);
   useGeneralSkills.getState().reset(ResumeData.skills.skill);

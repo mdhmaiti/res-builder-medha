@@ -12,7 +12,10 @@ const EditHeaders = ({ onLinkClick }: { onLinkClick: (link: string) => void }) =
   return (
     <motion.div initial={animation.initial} animate={animation.animate}>
       {Object.entries(headers).map(([link, { title }]) => (
-        <div key={title} className="bg-cyan-200 p-2 m-5 rounded-lg bg-opacity-50 text-white">
+        <div
+          key={title}
+          className="bg-orange-200 shadow-md shadow-slate-800 p-2 m-5 rounded-lg bg-opacity-50 text-slate-100"
+        >
           <a onClick={() => onLinkClick(link)}>
             <HeaderTitle title={title} />
             {/* <Divider /> */}

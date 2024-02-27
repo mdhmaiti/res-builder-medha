@@ -46,6 +46,53 @@ export const BasicIntro = ({
       <div>
         <ProfileName name={name} />
         <SectionSubtitle label={label} />
+
+        <div className="flex flex-row gap-3 items-center">
+          {linkedin && (
+            <Tooltip title="LinkedIn">
+              <a
+                href={linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
+                className=" flex flex-row items-center gap-1"
+              >
+                <span className="text-sm font-medium">LinkedIn:</span>
+                {/* <img src="" alt="LinkedIn" className="hidden" /> */}
+                <BsLinkedin />
+              </a>
+            </Tooltip>
+          )}
+          {twitter && (
+            <Tooltip title="Twitter">
+              <a
+                href={twitter}
+                target="_blank"
+                rel="noopener noreferrer"
+                className=" flex flex-row items-center gap-1"
+              >
+                <span className="text-sm font-medium">Twitter:</span>
+                <img src="" alt="Twitter" className="hidden" />
+                <BsTwitter />
+              </a>
+            </Tooltip>
+          )}
+          {github && (
+            <div className="flex gap-1 ml-1 items-center">
+              <Tooltip title="Github">
+                <a
+                  href={github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className=" flex flex-row items-center gap-1"
+                >
+                  <span className="text-sm font-medium">Github:</span>
+                  <img src="" alt="Github" className="hidden" />
+                  <BsGithub />
+                </a>
+              </Tooltip>
+            </div>
+          )}
+        </div>
         <div className="flex gap-3">
           <ProfileContact text={phone} />
           <ProfileContact text={email} />
@@ -56,7 +103,7 @@ export const BasicIntro = ({
               <ProfileContact text={url} />
             </div>
           )}
-          {linkedin && (
+          {/* {linkedin && (
             <div className="flex gap-1 ml-1 items-center">
               <Tooltip title="LinkedIn">
                 <a href={linkedin} target="_blank" rel="noopener noreferrer" className="ml-1">
@@ -85,7 +132,7 @@ export const BasicIntro = ({
                 </a>
               </Tooltip>
             </div>
-          )}
+          )} */}
           {hackerrank && (
             <div className="flex gap-1 ml-1 items-center">
               <Tooltip title="Hackerrank">

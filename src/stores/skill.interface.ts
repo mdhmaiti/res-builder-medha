@@ -1,6 +1,6 @@
 export interface ISkillItem {
   name: string;
-  level: number;
+  level: number | null;
 }
 
 export interface ISkillState {
@@ -9,7 +9,7 @@ export interface ISkillState {
   values: ISkillItem[];
   isEnabled: boolean;
 
-  add: ({ name, level }: { name: string; level: number }) => void;
+  add: ({ name, level }: { name: string; level: number | null }) => void;
   remove: (index: number) => void;
   get: () => void;
   reset: (name: ISkillItem[]) => void;

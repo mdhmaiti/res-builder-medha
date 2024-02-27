@@ -1,0 +1,274 @@
+{
+    "basics": {
+      "name": "",
+      "label": "",
+      "image": "",
+      "email": "",
+      "phone": "",
+      "url": "",
+      "summary": "",
+      "location": {
+        "address": "",
+        "postalCode": "",
+        "city": "",
+        "countryCode": "",
+        "region": ""
+      },
+      "relExp": "",
+      "totalExp": "",
+      "objective": "",
+      "profiles": [
+        {
+          "network": "",
+          "username": "",
+          "url": ""
+        },
+        {
+          "network": "",
+          "username": "",
+          "url": ""
+        },
+        {
+          "network": "",
+          "username": "",
+          "url": ""
+        }
+      ]
+    },
+    "skills": {
+      "skill": [
+        {
+          "name": "",
+          "level": null
+        },
+        {
+          "name": "",
+          "level": null
+        }
+      ],
+      "languages": [
+        {
+          "name": "",
+          "level": null
+        },
+        {
+          "name": "",
+          "level": null
+        },
+        {
+          "name": "",
+          "level": null
+        },
+        {
+          "name": "",
+          "level": null
+        }
+      ],
+      "frameworks": [
+        {
+          "name": "",
+          "level": null
+        },
+        {
+          "name": "",
+          "level": null
+        },
+        {
+          "name": "",
+          "level": null
+        }
+      ],
+      "technologies": [
+        {
+          "name": "",
+          "level": null
+        }
+      ],
+      "libraries": [
+        {
+          "name": "",
+          "level": null
+        },
+        {
+          "name": "",
+          "level": null
+        }
+      ],
+      "databases": [
+        {
+          "name": "",
+          "level": null
+        },
+        {
+          "name": "",
+          "level": null
+        },
+        {
+          "name": "",
+          "level": null
+        }
+      ],
+      "practices": [
+        {
+          "name": "",
+          "level": null
+        },
+        {
+          "name": "",
+          "level": null
+        }
+      ],
+      "tools": [
+        {
+          "name": "",
+          "level": null
+        },
+        {
+          "name": "",
+          "level": null
+        },
+        {
+          "name": "",
+          "level": null
+        }
+      ]
+    },
+    "work": [
+      {
+        "id": "1",
+        "name": "",
+        "position": "",
+        "url": "",
+        "startDate": null,
+        "isWorkingHere": false,
+        "endDate": null,
+        "highlights": [
+          ""
+        ],
+        "summary": "",
+        "years": ""
+      },
+      {
+        "id": "2",
+        "name": "",
+        "position": "",
+        "url": "",
+        "startDate": null,
+        "isWorkingHere": false,
+        "endDate": null,
+        "highlights": [
+          ""
+        ],
+        "summary": "",
+        "years": ""
+      },
+      {
+        "id": "3",
+        "name": "",
+        "position": "",
+        "url": "",
+        "startDate":null,
+        "isWorkingHere": false,
+        "endDate": null,
+        "highlights": [
+          ""
+        ],
+        "summary": "",
+        "years": ""
+      }
+    ],
+    "projects": [
+      {
+        "id": "1",
+        "name": "",
+        "url": "",
+        "summary": ""
+      },
+      {
+        "id": "2",
+        "name": "",
+        "url": "",
+        "summary": ""
+      },
+      {
+        "id": "3",
+        "name": "",
+        "url": "",
+        "summary": ""
+      }
+    ],
+    "education": [
+      {
+        "id": "1",
+        "institution": "",
+        "url": "",
+        "studyType": "",
+        "area": "",
+        "startDate": null,
+        "isStudyingHere": false,
+        "endDate": null,
+        "score": "",
+        "courses": []
+      },
+      {
+        "id": "2",
+        "institution": "",
+        "url": "",
+        "studyType": "",
+        "area": "",
+        "startDate": null,
+        "isStudyingHere": false,
+        "endDate": null,
+        "score": "",
+        "courses": []
+      }
+    ],
+    "activities": {
+      "involvements": "",
+      "achievements": ""
+    },
+    "volunteer": [
+      {
+        "id": "1",
+        "organization": "",
+        "position": "",
+        "url": "",
+        "startDate": null,
+        "endDate": null,
+        "summary": "",
+        "highlights": [
+          ""
+        ],
+        "isVolunteeringNow": false
+      },
+      {
+        "id": "2",
+        "organization": "",
+        "position": "",
+        "url": "",
+        "startDate": null,
+        "endDate": null,
+        "summary": "",
+        "highlights": [
+          ""
+        ],
+        "isVolunteeringNow": false
+      }
+    ],
+    "awards": [
+      {
+        "title": "",
+        "date": "",
+        "awarder": "",
+        "summary": "",
+        "id": "1"
+      },
+      {
+        "title": "",
+        "date": "",
+        "awarder": "",
+        "summary": "",
+        "id": "2"
+      }
+    ]
+  }

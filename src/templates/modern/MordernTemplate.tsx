@@ -16,7 +16,7 @@ export default function MordernTemplate() {
   const resumeData = useContext(StateContext);
 
   return (
-    <div className="p-1 ">
+    <div className="p-1 overflow-hidden break-words  ">
       <BasicIntro
         name={resumeData.basics.name}
         label={resumeData.basics.label}
@@ -34,8 +34,8 @@ export default function MordernTemplate() {
         // leetcode={resumeData.basics.profiles[6].url}
       />
 
-      <div className="flex h-full w-full gap-1">
-        <div className="basis-[60%] p-3">
+      <div className="flex h-full w-full gap-1 overflow-hidden ">
+        <div className="basis-[60%] p-3 max-w-1/2 overflow-hidden break-words">
           <SectionValidator value={resumeData.basics.summary}>
             <SummarySection summary={resumeData.basics.summary} />
           </SectionValidator>
@@ -47,7 +47,7 @@ export default function MordernTemplate() {
           </SectionValidator>
         </div>
 
-        <div className="basis-[40%] p-3">
+        <div className="basis-[40%] p-3 overflow-hidden break-words">
           <SectionValidator value={resumeData.basics.objective}>
             <Objective objective={resumeData.basics.objective} />
           </SectionValidator>
